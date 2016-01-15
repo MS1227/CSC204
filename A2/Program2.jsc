@@ -1,0 +1,92 @@
+@Java
+method firstI()
+{
+   plant5();
+   turn(RIGHT);
+   plant2();
+   turn(RIGHT);
+   hop();
+   plant2();
+   diagonalDownturn();
+   plant2();
+   turnAround();
+   hop();
+   turn(RIGHT);
+   hop();
+   turn(LEFT);
+   plant2();
+   diagonalUpturn();
+   plant2();
+   turn(RIGHT);
+   hop();
+   plant();
+   hop();
+   plant();
+   turn(RIGHT);
+   hop();
+   plant5();
+   
+}
+method lastI()
+{
+   plant5();
+   turn(LEFT);
+   plant2();
+   plant2();
+   turn(LEFT);
+   plant5();
+   turn(RIGHT);
+   plant2();
+   plant2();
+   turn(RIGHT);
+   plant5();
+}
+method plant5()
+{
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+}
+method plant2()
+{
+   plant();
+   hop();
+   plant();
+   hop();
+}
+   
+method diagonalDownturn()
+{
+   turn(LEFT);
+   hop();
+   turn(RIGHT);
+}   
+method turnAround()
+{
+   turn(RIGHT);
+   turn(RIGHT);
+}
+method diagonalUpturn()
+{
+   turn(RIGHT);
+   hop();
+   turn(LEFT);
+}
+@@
+method main()
+{
+
+Jeroo First = new Jeroo(9,4,NORTH,300);
+Jeroo Last = new Jeroo(20,8,300);
+
+First.firstI();
+Last.lastI();
+
+}
