@@ -1,0 +1,83 @@
+@Java
+method grid4by4()
+{
+   grid4();
+   turnAround();
+   hop(20);
+   turn(LEFT);
+   hop(5);
+   turn(LEFT);
+   grid4();
+   turnAround();
+   hop(20);
+   turn(LEFT);
+   hop(5);
+   turn(LEFT);
+   grid4();
+   turnAround();
+   hop(20);
+   turn(LEFT);
+   hop(5);
+   turn(LEFT);
+   grid4();
+   turnAround();
+   hop(20);
+   turn(LEFT);
+   hop(5);
+   turn(LEFT);
+}
+method grid4()
+{
+   box5();
+   hop(5);
+   box5();
+   hop(5);
+   box5();
+   hop(5);
+   box5();
+   hop(5);
+}
+method box5()
+{
+   plant5();
+   turn(RIGHT);
+   plant5();
+   turn(RIGHT);
+   plant5();
+   turn(RIGHT);
+   plant5();
+   turn(RIGHT);
+}
+method turnAround()
+{
+   turn(RIGHT);
+   turn(RIGHT);
+}
+
+method plant5()
+{
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   plant();
+   hop();
+   
+}
+@@
+method main()
+{
+   Jeroo toby = new Jeroo(500);
+   Jeroo tot = new Jeroo(2,2,WEST,500);
+   
+   toby.grid4by4();
+   toby.turn(RIGHT);
+   
+   tot.turnAround();
+   tot.grid4by4();
+
+}
