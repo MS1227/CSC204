@@ -1,0 +1,30 @@
+@Java
+
+@@
+method main()
+{
+    Jeroo matt = new Jeroo(10);
+    Jeroo cayla = new Jeroo(23,23,NORTH,2);
+    //Jeroo caleb = new Jeroo(10,9,EAST,2);
+    //Jeroo rebecca = new Jeroo(10,10,WEST,0);
+    
+    matt.plant();
+    matt.hop();
+    matt.plant();
+    matt.hop();
+    matt.plant();
+    matt.hop();
+    matt.plant();
+    matt.hop();
+    matt.plant();
+    matt.hop();
+    matt.turn(RIGHT);
+    matt.hop(5);
+    matt.turn(LEFT);
+    
+    cayla.hop(18);
+    cayla.turn(LEFT);
+    cayla.hop(17);
+    
+    matt.give(AHEAD);
+}
