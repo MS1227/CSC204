@@ -1,0 +1,25 @@
+@Java
+
+@@
+method main()
+{
+   Jeroo qwerty = new Jeroo();
+   
+   while(qwerty.isClear(AHEAD))
+   {
+      qwerty.hop();
+   }
+
+
+   
+//   if (qwerty.isWater(AHEAD))
+//   {
+//      qwerty.turn(RIGHT);
+//   }
+//   else
+//   {
+//      qwerty.hop();
+//   }
+}
+
+

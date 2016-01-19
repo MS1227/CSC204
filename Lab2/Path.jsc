@@ -1,0 +1,35 @@
+@Java
+method faceAFlower()
+{
+   if(!isFlower(AHEAD))
+   {
+      turn(LEFT);
+   }
+   if(!isFlower(AHEAD))
+   {
+      turn(LEFT);
+   }
+   if(!isFlower(AHEAD))
+   {
+      turn(LEFT);
+   }
+   followPath();
+   
+}
+
+method followPath()
+{
+   while(isFlower(AHEAD))
+   {
+      hop();
+      pick();
+   }
+   faceAFlower();
+}
+@@
+method main()
+{
+   Jeroo matt = new Jeroo(4,5);
+   
+   matt.faceAFlower();
+}
