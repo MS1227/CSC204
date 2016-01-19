@@ -13,7 +13,7 @@ method faceAFlower()
    {
       turn(LEFT);
    }
-   followPath();
+
    
 }
 
@@ -23,8 +23,9 @@ method followPath()
    {
       hop();
       pick();
+      faceAFlower();
    }
-   faceAFlower();
+   
 }
 @@
 method main()
@@ -32,4 +33,5 @@ method main()
    Jeroo matt = new Jeroo(4,5);
    
    matt.faceAFlower();
+   matt.followPath();
 }
