@@ -1,0 +1,35 @@
+@Java
+method pickallflowers(){
+  while(!isFacing(SOUTH)){
+   if(isFlower(HERE)){
+   pick();
+   }
+   if(isFlower(AHEAD)){
+   hop();
+   pick();
+   }
+   if(isClear(AHEAD)){
+   hop();
+   }
+   if(isWater(AHEAD)){
+   if(isFacing(EAST)){
+   turn(RIGHT);
+   if(!isWater(AHEAD)){
+   hop();
+   turn(RIGHT);}
+   }}
+   if(isWater(AHEAD)){
+   if(isFacing(WEST)){
+   turn(LEFT);
+   if(!isWater(AHEAD)){
+   hop();
+   turn(LEFT);}
+   }}
+   }
+}
+@@
+method main(){
+   Jeroo Adam = new Jeroo(1);
+   
+   Adam.pickallflowers();
+}
