@@ -1,0 +1,41 @@
+@Java
+method followShore()
+{
+   if(isFlower(AHEAD))
+   {
+      hop();
+      pick();
+   }
+   else if(isWater(AHEAD))
+   {
+      turn(LEFT);
+      followShore();
+   }
+   else if(isClear(AHEAD))
+   {
+      hop();
+      turn(RIGHT);
+      followShore();
+   }
+}
+
+method noFlower()
+{
+   while(!hasFlower())
+   {
+      followShore();
+   }
+}
+@@
+method main()
+{
+Jeroo bob = new Jeroo(10,14,1);
+Jeroo allen = new Jeroo(10,4,1);
+
+allen.plant();
+allen.noFlower();
+
+bob.plant();
+bob.noFlower();
+
+}
