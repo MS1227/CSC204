@@ -11,9 +11,19 @@ method followShore()
       turn(LEFT);
       followShore();
    }
-   else if(isClear(AHEAD))
+   else if(isWater(RIGHT))
    {
       hop();
+      followShore();
+   }
+   else if(isClear(RIGHT))
+   {
+      turn(RIGHT);
+      hop();
+      followShore();
+   }
+   else if(isFlower(RIGHT))
+   {
       turn(RIGHT);
       followShore();
    }
