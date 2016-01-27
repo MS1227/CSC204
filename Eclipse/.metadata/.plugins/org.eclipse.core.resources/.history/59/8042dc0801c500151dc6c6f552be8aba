@@ -1,0 +1,12 @@
+public class MUbear
+{
+   public static void main(String[] args)
+   {
+
+      System.out.println(",8ZZZZZZZZZZZZZZZZZZZZZZZZZ8. ..                 . 8ZZZZZZZZZZZZZZZZZZZZZZZZZ8:.");
+      System.out.println(":Z .,,,,,,,,,,,,,,,,,,..,,. Z...                 .$..,,,,,,,,,,,,,,,,,,,,,,..Z~");
+      System.out.println(":Z.D7777777777777777777777OO~8..                 O=+D7777777777777777777777D:Z~.");
+      System.out.println(":Z.8I77777777777I7777IIIII7I$.O.         .  .   Z.~7I7IIII777777777777777778:Z~");
+      
+   }
+}

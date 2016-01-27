@@ -1,0 +1,42 @@
+@Java
+method islandMakeOver()
+{
+   if(isClear(AHEAD))
+      {
+         plant();
+         hop();
+      }
+    else if(isWater(AHEAD) && isFacing(EAST))
+       {
+          plant();
+          turn(RIGHT);
+          hop();
+          turn(RIGHT);
+          islandMakeOver();
+       }
+     else if(isWater(AHEAD)&& isWater(LEFT) && isFacing(WEST))
+        {
+           plant();
+        }
+     else if(isWater(AHEAD) && isFacing(WEST))
+        {
+           plant();
+           turn(LEFT);
+           hop();
+           turn(LEFT);
+           islandMakeOver();
+        }
+}
+@@
+method main()
+{
+   Jeroo matt = new Jeroo(576);
+
+   while(matt.hasFlower())
+      {
+         matt.islandMakeOver();
+         
+      }
+      
+    
+}
