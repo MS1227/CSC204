@@ -1,0 +1,42 @@
+@Java
+method scoutTheIsland()
+{
+   if(isClear(AHEAD))
+   {
+      hop();
+      scoutTheIsland();
+   }
+   else if(isNet(AHEAD))
+   {
+      toss();
+      hop();
+      scoutTheIsland();
+   }
+   else if(isWater(AHEAD) && isFacing(EAST))
+      {
+         turn(RIGHT);
+         hop();
+         turn(RIGHT);
+         scoutTheIsland();
+      }
+   else if(isWater(AHEAD) && isFacing(WEST) && isClear(LEFT))
+      {
+         turn(LEFT);
+         hop();
+         turn(LEFT);
+         scoutTheIsland();
+      }
+   else if(isWater(AHEAD) && isWater(LEFT) && isFacing(WEST))
+      {
+      
+      }
+}
+@@
+method main()
+{
+   Jeroo matt = new Jeroo(50);
+  
+
+      matt.scoutTheIsland();
+    
+}
