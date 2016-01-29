@@ -1,0 +1,4 @@
+#Fri Jan 29 08:46:01 EST 2016
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=git

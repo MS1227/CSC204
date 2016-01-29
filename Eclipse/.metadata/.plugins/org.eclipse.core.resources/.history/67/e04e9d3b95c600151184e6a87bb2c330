@@ -1,0 +1,27 @@
+/* 
+ * Matt Schnider
+ * GeoCalc - A program to read in two points and calculate some geometric values
+ * Due February 3, 2016
+ * 
+ */
+public class GeoCalc {
+
+	public static void main(String[] args) {
+		
+		// Print strings of characters with or without a new line at the end
+		
+		System.out.println("         Matt's Geometric Calculator         ");
+		System.out.println("         ***************************         ");
+		System.out.print("Begin now:")
+		
+		// Read in some numbers
+		
+		// How to use variables
+		
+		// How to do math
+		
+		// Print out our numbers inside other text
+
+	}
+
+}
