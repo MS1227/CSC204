@@ -16,12 +16,12 @@ public class GeoCalc {
 		System.out.println("         ***************************         ");
 		
 		// Read in some numbers
+		
 		Scanner in = new Scanner(System.in);
 		double x1;
-		x1 = 123.456;
-		x1 = 2; 
-		System.out.print("x1: ");
+		System.out.print("What is value of x1"+x1);
 		x1 = in.nextDouble();
+		
 		
 		System.out.print("y1: ");
 		double y1 = in.nextDouble();
