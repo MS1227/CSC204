@@ -33,6 +33,7 @@ public class GeoCalc {
 		double distance = Math.sqrt((Math.pow((xB-xA), 2))+Math.pow((yB-yA), 2));                            // Applies distance formula to inputed values.
 		System.out.println("The distance between ("+xA+","+yA+")"+" and ("+xB+","+yB+")"+" is: "+distance);  // Displays the inputed values with the result of the distance formula.
 		System.out.println();                                                                                // Line break.
+		
 		System.out.println("The rectangle with coordinates: ");                                              // Displays text in quotations.
 		System.out.println("("+xA+","+yA+")"+" ("+xA+","+yB+")"+" ("+xB+","+yB+")"+" ("+xB+","+yA+")");      // Displays the coordinates of the four corners of the rectangle.
 		System.out.println();                                                                                // Line break.
@@ -40,7 +41,7 @@ public class GeoCalc {
 		double height = (yB-yA);                                                                             // Calculation of the height of the rectangle stored as variable "height" for us in later calculations.
 		System.out.println("        Has width of:     "+width);                                              // Printing of the value of the width variable.
 		System.out.println("        Has height of:    "+height);                                             // Printing of the value of the height variable.
-		System.out.println("        Has perimeter of: "+((2*width)+(2*height)));                             // application of width and height variables into the perimeter formula.
+		System.out.println("        Has perimeter of: "+((2*width)+(2*height)));                             // Application of width and height variables into the perimeter formula.
 		System.out.println("        Has area of:      "+(width*height));                                     // Application of the width and height variables into the area formula.
 		System.out.println();                                                                                // Line break.
 		
