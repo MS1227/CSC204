@@ -18,16 +18,16 @@ public class GeoCalc {
 		
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("What is the value of the X coordinate for point A? " );                            // Prompts user for X value of point A.
+		System.out.print("What is the value of the X coordinate for point A: " );                            // Prompts user for X value of point A.
 		double xA = in.nextDouble();                                                                         // Takes next value inputed and places it in variable xA.
 		
-		System.out.print("What is the value of the Y coordinate for point A? " );                            // Prompts user for Y value of point A.
+		System.out.print("What is the value of the Y coordinate for point A: " );                            // Prompts user for Y value of point A.
 		double yA = in.nextDouble();                                                                         // Takes next value inputed and places it in variable yA.
 		
-		System.out.print("What is the value of the X coordinate for point B? ");                             // Prompts user for X value of point B.
+		System.out.print("What is the value of the X coordinate for point B: ");                             // Prompts user for X value of point B.
 		double xB = in.nextDouble();                                                                         // Takes next value inputed and places it in variable xB.
 		
-		System.out.print("What is the value of the Y coordinate for point B? ");                             // Prompts user for Y value of point B.
+		System.out.print("What is the value of the Y coordinate for point B: ");                             // Prompts user for Y value of point B.
 		double yB = in.nextDouble();                                                                         // Takes next value inputed and places it in variable yB.
 		System.out.println();
 		double distance = Math.sqrt((Math.pow((xB-xA), 2))+Math.pow((yB-yA), 2));                            // Applies distance formula to inputed values.
