@@ -42,12 +42,6 @@ public class GeoCalc {
 		System.out.println("        Has height of:    "+height);
 		System.out.println("        Has perimeter of: "+((2*width)+(2*height)));
 		System.out.println("        Has area of:      "+(width*height));
-		System.out.println();
-		
-		System.out.println("The circle with points A and B at the ends of a diameter:");
-		System.out.println("        Has its center at: ("+((xB-xA)/2)+","+((yB-yA)/2)+")");
-		System.out.println("        Has a radius of:    "+(distance)/2);
-		System.out.println("        Has a diameter of:  "+distance);
 		
 		
 		// How to use variables

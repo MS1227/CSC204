@@ -30,25 +30,9 @@ public class GeoCalc {
 		System.out.print("What is the value of the Y coordinate for point B: "); // Reads in Y value for point B
 		double yB = in.nextDouble();
 		System.out.println();
-		double distance = Math.sqrt((Math.pow((xB-xA), 2))+Math.pow((yB-yA), 2)); // Applies distance formula to inputed values.
-		System.out.println("The distance between ("+xA+","+yA+")"+" and ("+xB+","+yB+")"+" is: "+distance); 
-		System.out.println();
-		System.out.println("The rectangle with coordinates: ");
-		System.out.println("("+xA+","+yA+")"+" ("+xA+","+yB+")"+" ("+xB+","+yB+")"+" ("+xB+","+yA+")");
-		System.out.println();
-		double width = (xB-xA);
-		double height = (yB-yA);
-		System.out.println("        Has width of:     "+width);
-		System.out.println("        Has height of:    "+height);
-		System.out.println("        Has perimeter of: "+((2*width)+(2*height)));
-		System.out.println("        Has area of:      "+(width*height));
-		System.out.println();
 		
-		System.out.println("The circle with points A and B at the ends of a diameter:");
-		System.out.println("        Has its center at: ("+((xB-xA)/2)+","+((yB-yA)/2)+")");
-		System.out.println("        Has a radius of:    "+(distance)/2);
-		System.out.println("        Has a diameter of:  "+distance);
-		
+		System.out.print("The distance between ("+xA+","+yA+")"+" and ("+xB+","+yB+")"+" is: "+Math.sqrt((Math.pow((xB-xA), 2))+Math.pow((yB-yA), 2)));
+		System.out.print(Math.sqrt(2));
 		
 		// How to use variables
 		

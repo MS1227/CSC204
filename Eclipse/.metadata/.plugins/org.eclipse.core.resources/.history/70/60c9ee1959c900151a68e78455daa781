@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+/* 
+ * Matt Schnider
+ * GeoCalc - A program to read in two points and calculate some geometric values
+ * Due February 3, 2016
+ * 
+ */
+public class GeoCalc {
+
+	public static void main(String[] args) {
+		
+		// Print strings of characters with or without a new line at the end
+		
+		System.out.println("         Matt's Geometric Calculator         ");
+		System.out.println("         ***************************         ");
+		
+		// Read in some numbers
+		
+		Scanner in = new Scanner(System.in);
+		System.out.print("What is the value of the X coordinate for point A: " );
+		double xA = in.nextDouble();
+		
+		System.out.print("What is the value of the Y coordinate for point A: " );
+		double yA = in.nextDouble();
+		
+		System.out.print("What is the value of the X coordinate for point B: ");
+		double xB = in.nextDouble();
+		
+		System.out.print("What is the value of the Y coordinate for point B: ");
+		double yB = in.nextDouble();
+		
+		// How to use variables
+		
+		// How to do math
+		
+		// Print out our numbers inside other text
+		
+	
+		
+	}
+
+}

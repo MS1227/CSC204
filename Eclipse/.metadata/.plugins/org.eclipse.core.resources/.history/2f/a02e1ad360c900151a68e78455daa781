@@ -46,8 +46,6 @@ public class GeoCalc {
 		
 		System.out.println("The circle with points A and B at the ends of a diameter:");
 		System.out.println("        Has its center at: ("+((xB-xA)/2)+","+((yB-yA)/2)+")");
-		System.out.println("        Has a radius of:    "+(distance)/2);
-		System.out.println("        Has a diameter of:  "+distance);
 		
 		
 		// How to use variables
