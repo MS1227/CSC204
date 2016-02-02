@@ -37,8 +37,8 @@ public class GeoCalc {
 		System.out.println("The rectangle with coordinates: ");                                              // Displays text in quotations.
 		System.out.println("("+xA+","+yA+")"+" ("+xA+","+yB+")"+" ("+xB+","+yB+")"+" ("+xB+","+yA+")");      // Displays the coordinates of the four corners of the rectangle.
 		System.out.println();                                                                                // Line break.
-		double width = (Math.abs(xB-xA));                                                                    // Calculation of the width of the rectangle stored as variable "width" for use in later calculations. Absolute value prevents neg distance.
-		double height = (Math.abs(yB-yA));                                                                   // Calculation of the height of the rectangle stored as variable "height" for us in later calculations. Absolute value prevents neg distance.
+		double width = (xB-xA);                                                                              // Calculation of the width of the rectangle stored as variable "width" for use in later calculations.
+		double height = (yB-yA);                                                                             // Calculation of the height of the rectangle stored as variable "height" for us in later calculations.
 		System.out.println("        Has width of:     "+width);                                              // Printing of the value of the width variable.
 		System.out.println("        Has height of:    "+height);                                             // Printing of the value of the height variable.
 		System.out.println("        Has perimeter of: "+((2*width)+(2*height)));                             // Application of width and height variables into the perimeter formula.
