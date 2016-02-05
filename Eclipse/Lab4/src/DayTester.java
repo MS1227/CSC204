@@ -2,9 +2,8 @@ public class DayTester
 {
    public static void main(String[] args)
    {
-      Day today = new Day(2010, 2, 15); // February 15, 2010
-      Day later = today.addDays(30);
-
+      Day today = new Day(2016, 2, 3); // February 15, 2010
+      Day later = new Day(2016, 12, 25);
       System.out.println(later.getYear());
       System.out.println("Expected: 2010");
       System.out.println(later.getMonth());

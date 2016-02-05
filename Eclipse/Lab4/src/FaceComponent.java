@@ -17,7 +17,7 @@ public class FaceComponent extends JComponent
       Graphics2D g2 = (Graphics2D) g;
 
       // Draw the head
-      Ellipse2D.Double head = new Ellipse2D.Double(5, 10, 100, 150);
+      Ellipse2D.Double head = new Ellipse2D.Double(10, 10, 100, 150);
       g2.draw(head);
 
       // Draw the eyes
@@ -34,6 +34,6 @@ public class FaceComponent extends JComponent
 
       // Draw the greeting
       g2.setColor(Color.BLUE);
-      g2.drawString("Hello, World!", 5, 175);
+      g2.drawString("Hello, World!", 5, 210);
    }
 }
