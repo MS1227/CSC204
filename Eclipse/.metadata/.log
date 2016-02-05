@@ -6319,3 +6319,28 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.egit.core 4 0 2016-02-05 08:15:38.979
+!MESSAGE An exception occurred during push on URI git@github.com:MS1227/CSC204.git: git@github.com:MS1227/CSC204.git: Short read of block.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: git@github.com:MS1227/CSC204.git: Short read of block.
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:219)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:154)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:167)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.EOFException: Short read of block.
+	at org.eclipse.jgit.util.IO.readFully(IO.java:249)
+	at org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:186)
+	at org.eclipse.jgit.transport.SideBandInputStream.needDataPacket(SideBandInputStream.java:154)
+	at org.eclipse.jgit.transport.SideBandInputStream.read(SideBandInputStream.java:136)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:247)
+	at org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:186)
+	at org.eclipse.jgit.transport.PacketLineIn.readString(PacketLineIn.java:138)
+	at org.eclipse.jgit.transport.BasePackPushConnection.readStringLongTimeout(BasePackPushConnection.java:390)
+	at org.eclipse.jgit.transport.BasePackPushConnection.readStatusReport(BasePackPushConnection.java:327)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:202)
+	... 7 more
