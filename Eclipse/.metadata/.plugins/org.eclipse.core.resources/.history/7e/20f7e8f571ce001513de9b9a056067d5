@@ -16,7 +16,7 @@ import java.awt.geom.Line2D;
 
 import javax.swing.JComponent;
 
-public class TrafficLight extends JComponent {
+public class Target extends JComponent {
 	   public void paintComponent(Graphics g)
 	   {  
 	      // Recover Graphics2D

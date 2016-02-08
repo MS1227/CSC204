@@ -10,16 +10,16 @@
 
 import javax.swing.JFrame;
 
-public class TrafficLightMain {
+public class TargetMain {
 
 	public static void main(String[] args) {
 	      JFrame frame = new JFrame();
 
-	      frame.setSize(500, 800);
-	      frame.setTitle("Traffic Light");
+	      frame.setSize(500, 500);
+	      frame.setTitle("Target");
 	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-	      SampleGraphics component = new TrafficLight();
+	      Target component = new Target();
 	      frame.add(component);
 
 	      frame.setVisible(true);
