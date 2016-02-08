@@ -26,37 +26,28 @@ public class TrafficLight extends JComponent {
 	      //     note:  getWidth() and getHeight() are defined in the
 	      //            JComponent.  We can just call them to know 
 	      //            the dimensions of this frame. 
-	      int width = getWidth();
-	      int height = getHeight();
-	      
-	      Rectangle sky = new Rectangle(0,0,width,height);
-	      g2.setColor(Color.cyan);
+	      Rectangle sky = new Rectangle(0,0,getWidth(),getHeight());
+	      g2.setColor(Color.blue);
 	      g2.fill(sky);
 	      
-	      //////////////////// calculate the padding around each light
-	      
-	      double heightPadding = getHeight()/6/10;
-	      double widthPadding = getWidth()/3/10;     //10% padding
-	      
-	      
-	      Rectangle ground = new Rectangle(0,3*height/4,width,height/4);
+	      Rectangle ground = new Rectangle(0,3*getHeight()/4,getWidth(),getHeight()/4);
 	      g2.setColor(Color.gray);
 	      g2.fill(ground);
 	      
-	      Rectangle light = new Rectangle(width/3,height/50,width/3,height/2);
+	      Rectangle light = new Rectangle(getWidth()/3,getHeight()/50,getWidth()/3,getHeight()/2);
 	      g2.setColor(Color.black);
 	      g2.fill(light);
 	      
 	      // Blue Circle in upper left corner
-	      Ellipse2D.Double redCircle = new Ellipse2D.Double(width/3+widthPadding,height/50+heightPadding,(width/3)-2*widthPadding,(height/6)-2*heightPadding);
+	      Ellipse2D.Double redCircle = new Ellipse2D.Double(getWidth()/3,getHeight()/50,getWidth()/3,getHeight()/6);
 	      g2.setColor(Color.red);
 	      g2.fill(redCircle);
 	      
-	      Ellipse2D.Double yellowCircle = new Ellipse2D.Double(width/3+widthPadding,height/50+height/6+heightPadding,width/3-2*widthPadding,height/6-2*heightPadding);
+	      Ellipse2D.Double yellowCircle = new Ellipse2D.Double(getWidth()/3,getHeight()/50+getHeight()/6,getWidth()/3,getHeight()/6);
 	      g2.setColor(Color.yellow);
 	      g2.fill(yellowCircle);
 	      
-	      Ellipse2D.Double greenCircle = new Ellipse2D.Double(width/3+widthPadding,height/50+2*height/6+heightPadding,width/3-2*widthPadding,height/6-2*heightPadding);
+	      Ellipse2D.Double greenCircle = new Ellipse2D.Double(getWidth()/3,getHeight()/50+2*getHeight()/6,getWidth()/3,getHeight()/6);
 	      g2.setColor(Color.green);
 	      g2.fill(greenCircle);
 	       

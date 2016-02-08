@@ -16,22 +16,19 @@ import java.awt.geom.Line2D;
 
 import javax.swing.JComponent;
 
-public class TrafficLight extends JComponent {
+public class Target extends JComponent {
 	   public void paintComponent(Graphics g)
 	   {  
 	      // Recover Graphics2D
 	      Graphics2D g2 = (Graphics2D) g;
 
-	      // Fill the entire frame with a color
-	      //     note:  getWidth() and getHeight() are defined in the
-	      //            JComponent.  We can just call them to know 
-	      //            the dimensions of this frame. 
+
 	      int width = getWidth();
 	      int height = getHeight();
 	      
-	      Rectangle sky = new Rectangle(0,0,width,height);
-	      g2.setColor(Color.cyan);
-	      g2.fill(sky);
+	      Rectangle background = new Rectangle(0,0,width,height);
+	      g2.setColor(Color.white);
+	      g2.fill(background);
 	      
 	      //////////////////// calculate the padding around each light
 	      

@@ -52,11 +52,11 @@ public class TrafficLight extends JComponent {
 	      g2.setColor(Color.red);
 	      g2.fill(redCircle);
 	      
-	      Ellipse2D.Double yellowCircle = new Ellipse2D.Double(width/3+widthPadding,height/50+height/6+heightPadding,width/3-2*widthPadding,height/6-2*heightPadding);
+	      Ellipse2D.Double yellowCircle = new Ellipse2D.Double(width/3,height/50+height/6,width/3,height/6);
 	      g2.setColor(Color.yellow);
 	      g2.fill(yellowCircle);
 	      
-	      Ellipse2D.Double greenCircle = new Ellipse2D.Double(width/3+widthPadding,height/50+2*height/6+heightPadding,width/3-2*widthPadding,height/6-2*heightPadding);
+	      Ellipse2D.Double greenCircle = new Ellipse2D.Double(width/3,height/50+2*height/6,width/3,height/6);
 	      g2.setColor(Color.green);
 	      g2.fill(greenCircle);
 	       
