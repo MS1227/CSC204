@@ -197,3 +197,6 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/Lab4' does not
 
 2016-02-09 14:20:09,332 [Thread-8] ERROR org.eclipse.jgit.util.FS - fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
 
+2016-02-09 16:11:25,745 [Thread-7] ERROR org.eclipse.jgit.util.FS - fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
+
+2016-02-09 16:18:24,990 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
