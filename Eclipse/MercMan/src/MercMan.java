@@ -105,7 +105,34 @@ public void paintComponent(Graphics g)
 		  Line2D.Double noseR = new Line2D.Double(33*width/64, 13*height/64, width/2, 3*height/16);
 		  g2.draw(noseR);
 		  
-		  //Mouth
+		  //Teeth
+		  g2.setColor(Color.white);
+		  Rectangle teeth = new Rectangle(29*width/64, 15*height/64, width/64, height/64);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(0, height/64);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  
+		  //Teeth ouline
 		  g2.setColor(Color.RED);
 		  Rectangle mouth = new Rectangle(29*width/64, 15*height/64, width/64, height/64);
 		  g2.draw(mouth);
