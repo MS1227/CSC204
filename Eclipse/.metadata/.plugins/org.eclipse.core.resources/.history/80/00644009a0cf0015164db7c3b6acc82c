@@ -15,7 +15,7 @@ public class MercMan extends JComponent
 {
 
 public void paintComponent(Graphics g)
- {
+  {
 	// Recover Graphics2D
 	  Graphics2D g2 = (Graphics2D) g;
 	  int width = getWidth();		// width of the Component
@@ -29,8 +29,11 @@ public void paintComponent(Graphics g)
 	  	  g2.setColor(Color.yellow);
 	  	  Rectangle beach = new Rectangle(0, 2*height/3, width, height);
 	  	  g2.fill(beach);
-	  	  Ellipse2D.Double sun = new Ellipse2D.Double(-10, 0, width/8, width/8);
+	  	  Ellipse2D.Double sun = new Ellipse2D.Double(-10, 0, width/8, height/8);
 	  	  g2.fill(sun);
+	  	  g2.setColor(Color.blue);
+	  	  Rectangle ocean = new Rectangle(0, 2*height/3, width, height/32);
+	  	  g2.fill(ocean);
 	      //legs
 	  
 	  	  g2.setColor(Color.black);
@@ -52,6 +55,12 @@ public void paintComponent(Graphics g)
 		  Ellipse2D.Double body = new Ellipse2D.Double(width/4, height/6, width/2, height/2); //draws the body ellipse
 		  g2.fill(body);
 		  
+		  //Ears
+		  g2.setColor(Color.red);
+		  Ellipse2D.Double leftEar = new Ellipse2D.Double(93*width/256, 10*height/64, 2*width/64, height/32);
+		  g2.fill(leftEar);
+		  Ellipse2D.Double rightEar = new Ellipse2D.Double(155*width/256, 10*height/64, 2*width/64, height/32);
+		  g2.fill(rightEar);
 		  //Head
 		  g2.setColor(Color.DARK_GRAY);
 		  Ellipse2D.Double head = new Ellipse2D.Double(3*width/8, height/16 , width/4, height/4); //draws the head

@@ -8,9 +8,10 @@ import java.awt.geom.Line2D;
 
 import javax.swing.JComponent;
 
-/**
-A component that draws a MercMan
-*/
+/*
+ * A component that draws a MercMan by Matt Schnider
+ * Due February 15, 2016
+ */
 public class MercMan extends JComponent
 {
 
