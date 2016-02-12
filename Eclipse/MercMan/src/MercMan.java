@@ -1,5 +1,6 @@
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -23,10 +24,17 @@ public void paintComponent(Graphics g)
 	  int height = getHeight();		// height of the Component
 	  
 	  	  //scenery
-	  
+	  	  
 	  	  g2.setColor(Color.cyan);	
 	  	  Rectangle sky = new Rectangle(0, 0, width, 2*height/3);
 	  	  g2.fill(sky);
+	  	  g2.setColor(Color.white);
+	  	  Ellipse2D.Double cloudA = new Ellipse2D.Double(3*width/4, height/16, width/8, height/16);
+	  	  g2.fill(cloudA);
+	  	  Ellipse2D.Double cloudB = new Ellipse2D.Double(25*width/32, 3*height/32, width/8, height/16);
+	  	  g2.fill(cloudB);
+	  	  Ellipse2D.Double cloudC = new Ellipse2D.Double(22*width/32, 3*height/32, width/8, height/16);
+	  	  g2.fill(cloudC);
 	  	  g2.setColor(Color.yellow);
 	  	  Rectangle beach = new Rectangle(0, 2*height/3, width, height);
 	  	  g2.fill(beach);
@@ -35,6 +43,7 @@ public void paintComponent(Graphics g)
 	  	  g2.setColor(Color.blue);
 	  	  Rectangle ocean = new Rectangle(0, 2*height/3, width, height/32);
 	  	  g2.fill(ocean);
+	  	  
 	      //legs
 	  
 	  	  g2.setColor(Color.black);
