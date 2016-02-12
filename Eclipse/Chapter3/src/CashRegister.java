@@ -17,6 +17,7 @@ public class CashRegister
       taxRate = rate;
       purchase = 0;
       payment = 0;
+      taxablePurchase = 0;
    }
 
    /**
@@ -32,7 +33,7 @@ public class CashRegister
       Records the sale of a taxable item.
       @param amount the price of the item
    */
-   public void recordTaxablePurchase(double amount)
+   private void recordTaxablePurchase(double amount)
    {
       taxablePurchase = taxablePurchase + amount;
    }
@@ -50,7 +51,7 @@ public class CashRegister
       Processes the sales tax due.
       @return the sales tax due
    */
-   public double getSalesTax()
+   private double getSalesTax()
    {
       return taxablePurchase * taxRate / 100;
    }
@@ -60,10 +61,12 @@ public class CashRegister
       @return the change due to the customer
    */
    public double giveChange()
-   {   
-      double change = payment - purchase - get;
+   {  
+	  taxablePurchase = purchase; 
+      double change = payment - purchase - getSalesTax();
       purchase = 0;
       payment = 0;
+      taxablePurchase = 0;
       return change;
    }
 }

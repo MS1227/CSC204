@@ -40,6 +40,12 @@ public class BankAccount
    {   
       balance = balance - amount;
    }
+   
+   public void transfer(double amt, BankAccount other  )
+   {
+	   withdraw(amt);
+	   other.deposit(amt);
+   }
 
    /**
       Gets the current balance of the bank account.

@@ -19,6 +19,10 @@ public class BankAccountTester
       harrysSavings.deposit(501);
       System.out.println("Harry's Checking: $"+harrysChecking.getBalance());
       System.out.println("Harry's Savings: $"+harrysSavings.getBalance());
+      harrysChecking.transfer(500, harrysSavings);
+      System.out.println("Harry's Checking: $"+harrysChecking.getBalance());
+      System.out.println("Harry's Savings: $"+harrysSavings.getBalance());
+      
       
    }
 }
