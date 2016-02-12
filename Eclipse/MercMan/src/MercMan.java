@@ -23,11 +23,16 @@ public void paintComponent(Graphics g)
 	  int width = getWidth();		// width of the Component
 	  int height = getHeight();		// height of the Component
 	  
-	  	  //scenery
-	  	  
-	  	  g2.setColor(Color.cyan);	
-	  	  Rectangle sky = new Rectangle(0, 0, width, 2*height/3);
-	  	  g2.fill(sky);
+	  	  /* Scenery
+	  	   * Sky is drawn using a scalable rectangle filled with Cyan. Color is then changed to white
+	  	   * and 3 overlapping ellipses are filled to create clouds. Color is then set to yellow and
+	  	   * a scalable rectangle and ellipse are drawn to create the beach and sun, respectively.
+	  	   * Color is then set to blue and one more scalable rectangle is filled to create the ocean.
+	  	   */
+	  	  																												
+	  	  g2.setColor(Color.cyan);																			
+	  	  Rectangle sky = new Rectangle(0, 0, width, 2*height/3);                                           
+	  	  g2.fill(sky);                                                 								    
 	  	  g2.setColor(Color.white);
 	  	  Ellipse2D.Double cloudA = new Ellipse2D.Double(3*width/4, height/16, width/8, height/16);
 	  	  g2.fill(cloudA);
@@ -44,7 +49,10 @@ public void paintComponent(Graphics g)
 	  	  Rectangle ocean = new Rectangle(0, 2*height/3, width, height/32);
 	  	  g2.fill(ocean);
 	  	  
-	      //legs
+	      /* Legs
+	       * Color is set to black and the stroke set to 12 to create a thicker line to represent the legs.
+	       * The legs are drawn as two lines that scale as height and width change. 
+	       */
 	  
 	  	  g2.setColor(Color.black);
 	      g2.setStroke(new BasicStroke(12));
@@ -53,30 +61,57 @@ public void paintComponent(Graphics g)
 	      Line2D.Double leftLeg = new Line2D.Double(15*width/32, 2*height/3, 12*width/32, height);
 	      g2.draw(leftLeg);	
 	      
-	      //Arms
+	      /* Arms
+	       * Arms are drawn as lines in the same fashion as the legs.
+	       */
 	      Line2D.Double leftArm = new Line2D.Double(9*width/32, 6*height/16, width/16, 3*height/4);
 	      g2.draw(leftArm);
 	      Line2D.Double rightArm = new Line2D.Double(23*width/32, 6*height/16, 15*width/16, 3*height/4);
 	      g2.draw(rightArm);
 	      
-	      //Torso
+	      /* Torso
+	       * Stroke is set back to 1 for thin lines and the color is set to magenta in preparation to draw
+	       * the torso. A scalable ellipse is then filled. Color is changed to black and 4 lines are drawn
+	       * in order to add some detail to the torso.
+	       */
+	      
 	      g2.setStroke(new BasicStroke(1));
 		  g2.setColor(Color.magenta);
 		  Ellipse2D.Double body = new Ellipse2D.Double(width/4, height/6, width/2, height/2); //draws the body ellipse
 		  g2.fill(body);
+		  g2.setColor(Color.BLACK);
+		  Line2D.Double centerLine = new Line2D.Double(width/2, 2*height/3, width/2, height/2);
+		  g2.draw(centerLine);
+		  Line2D.Double leftLine = new Line2D.Double(width/2, height/2, width/4, 7*height/16);
+		  g2.draw(leftLine);
+		  Line2D.Double rightLine = new Line2D.Double(width/2, height/2, 3*width/4, 7*height/16);
+		  g2.draw(rightLine);
+		  Line2D.Double topLine = new Line2D.Double(width/4, 7*height/16, 3*width/4, 7*height/16);
+		  g2.draw(topLine);
 		  
-		  //Ears
+		  /* Ears
+		   * Color is set to red and 2 scalable ellipses are created and filled to represent the ears.
+		   */
+		  
 		  g2.setColor(Color.red);
 		  Ellipse2D.Double leftEar = new Ellipse2D.Double(93*width/256, 10*height/64, 2*width/64, height/32);
 		  g2.fill(leftEar);
 		  Ellipse2D.Double rightEar = new Ellipse2D.Double(155*width/256, 10*height/64, 2*width/64, height/32);
 		  g2.fill(rightEar);
-		  //Head
+		  
+		  /*Head
+		   * Color is set to Dark Gray and a scalable ellipse if created and filled to create the head.
+		   */
+		  
 		  g2.setColor(Color.DARK_GRAY);
 		  Ellipse2D.Double head = new Ellipse2D.Double(3*width/8, height/16 , width/4, height/4); //draws the head
 		  g2.fill(head);
 		  
-		  //Hair
+		  /* Hair
+		   * Color is set to green and a scalable rectangle is created and filled. The mutator, .translate, is then used
+		   * to create copies of the rectangle which are filled with the same green.
+		   */
+		  
 		  g2.setColor(Color.GREEN);
 		  Rectangle hair = new Rectangle(13*width/32, 0, width/32, 7*height/64);
 		  g2.fill(hair);

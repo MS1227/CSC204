@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;FaceComponent.java&quot; tooltip=&quot;Lab4/src/FaceComponent.java&quot;>&#xA;&lt;persistable path=&quot;/Lab4/src/FaceComponent.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MercManViewer.java&quot; tooltip=&quot;MercMan/src/MercManViewer.java&quot;>&#xA;&lt;persistable path=&quot;/MercMan/src/MercManViewer.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MercMan.java&quot; tooltip=&quot;MercMan/src/MercMan.java&quot;>&#xA;&lt;persistable path=&quot;/MercMan/src/MercMan.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_-jh9MtAIEeW3o4chRDei4w" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_-9PdstAIEeW3o4chRDei4w" label="%trimmedwindow.label.eclipseSDK" x="411" y="30" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_-jh9MtAIEeW3o4chRDei4w" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_-9PdstAIEeW3o4chRDei4w" label="%trimmedwindow.label.eclipseSDK" x="-29" y="23" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -102,7 +102,7 @@
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_TfvRYNAJEeW3o4chRDei4w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MercMan.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MercMan.java&quot; partName=&quot;MercMan.java&quot; title=&quot;MercMan.java&quot; tooltip=&quot;MercMan/src/MercMan.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MercMan/src/MercMan.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2317&quot; selectionTopPixel=&quot;732&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MercMan.java&quot; partName=&quot;MercMan.java&quot; title=&quot;MercMan.java&quot; tooltip=&quot;MercMan/src/MercMan.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MercMan/src/MercMan.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4835&quot; selectionTopPixel=&quot;2213&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -174,7 +174,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_--xuwNAIEeW3o4chRDei4w" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_--6RoNAIEeW3o4chRDei4w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_-kY48dAIEeW3o4chRDei4w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JO_B4NGLEeW5NIzYLC7-pQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_-kY48dAIEeW3o4chRDei4w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_--xuwdAIEeW3o4chRDei4w" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -195,7 +195,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_--yV0NAIEeW3o4chRDei4w" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_--8G0NAIEeW3o4chRDei4w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_-kSLNNAIEeW3o4chRDei4w"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_JPCFMNGLEeW5NIzYLC7-pQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_-kSLNNAIEeW3o4chRDei4w"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_--yV0dAIEeW3o4chRDei4w" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -229,8 +229,19 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="__FqZ4NAIEeW3o4chRDei4w" elementId="org.eclipse.ui.trim.vertical1" side="Left"/>
-    <trimBars xmi:id="__FrA8NAIEeW3o4chRDei4w" elementId="org.eclipse.ui.trim.vertical2" side="Right"/>
+    <trimBars xmi:id="__FqZ4NAIEeW3o4chRDei4w" elementId="org.eclipse.ui.trim.vertical1" toBeRendered="false" side="Left">
+      <children xsi:type="menu:ToolControl" xmi:id="__q808NGMEeW5NIzYLC7-pQ" elementId="topLeft(org.eclipse.ui.resourcePerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="__rJpQNGMEeW5NIzYLC7-pQ" elementId="bottomLeft(org.eclipse.ui.resourcePerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="__FrA8NAIEeW3o4chRDei4w" elementId="org.eclipse.ui.trim.vertical2" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="__rPI0NGMEeW5NIzYLC7-pQ" elementId="bottomRight(org.eclipse.ui.resourcePerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
   </children>
   <handlers xmi:id="_-lo2ANAIEeW3o4chRDei4w" elementId="org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler" command="_-loO8dAIEeW3o4chRDei4w"/>
   <handlers xmi:id="_-lo2AtAIEeW3o4chRDei4w" elementId="org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler" command="_-lo2AdAIEeW3o4chRDei4w"/>
@@ -493,7 +504,7 @@
     </bindings>
     <bindings xmi:id="_-ld25dAIEeW3o4chRDei4w" keySequence="ALT+CTRL+H" command="_-kTZR9AIEeW3o4chRDei4w"/>
     <bindings xmi:id="_-led8NAIEeW3o4chRDei4w" keySequence="ALT+COMMAND+SHIFT+ARROW_DOWN" command="_-kauH9AIEeW3o4chRDei4w"/>
-    <bindings xmi:id="_-lpdEdAIEeW3o4chRDei4w" keySequence="COMMAND+CTRL+F" command="_-lo2A9AIEeW3o4chRDei4w"/>
+    <bindings xmi:id="_I9khwdGLEeW5NIzYLC7-pQ" keySequence="COMMAND+CTRL+F" command="_-lo2A9AIEeW3o4chRDei4w"/>
   </bindingTables>
   <bindingTables xmi:id="_-lBK8tAIEeW3o4chRDei4w" elementId="org.eclipse.ui.textEditorScope" bindingContext="_-kfmjNAIEeW3o4chRDei4w">
     <bindings xmi:id="_-lBK89AIEeW3o4chRDei4w" keySequence="COMMAND+SHIFT+NUMPAD_MULTIPLY" command="_-kSLQ9AIEeW3o4chRDei4w"/>
@@ -772,7 +783,7 @@
     <bindings xmi:id="_-ld25NAIEeW3o4chRDei4w" keySequence="CTRL+D" command="_-kV1mtAIEeW3o4chRDei4w"/>
   </bindingTables>
   <bindingTables xmi:id="_-lqEINAIEeW3o4chRDei4w" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_-jh9N9AIEeW3o4chRDei4w">
-    <bindings xmi:id="_-lqEIdAIEeW3o4chRDei4w" keySequence="M1+W" command="_-lpdFNAIEeW3o4chRDei4w"/>
+    <bindings xmi:id="_I9lI0NGLEeW5NIzYLC7-pQ" keySequence="M1+W" command="_-lpdFNAIEeW3o4chRDei4w"/>
   </bindingTables>
   <bindingTables xmi:id="__HPuQdAIEeW3o4chRDei4w" bindingContext="__HPuQNAIEeW3o4chRDei4w"/>
   <bindingTables xmi:id="__HQVUNAIEeW3o4chRDei4w" bindingContext="__HPuQtAIEeW3o4chRDei4w"/>

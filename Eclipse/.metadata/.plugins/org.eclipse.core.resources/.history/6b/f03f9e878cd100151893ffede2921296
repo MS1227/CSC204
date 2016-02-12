@@ -1,5 +1,6 @@
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -8,24 +9,32 @@ import java.awt.geom.Line2D;
 
 import javax.swing.JComponent;
 
-/**
-A component that draws a MercMan
-*/
+/*
+ * A component that draws a MercMan by Matt Schnider
+ * Due February 15, 2016
+ */
 public class MercMan extends JComponent
 {
 
 public void paintComponent(Graphics g)
- {
+  {
 	// Recover Graphics2D
 	  Graphics2D g2 = (Graphics2D) g;
 	  int width = getWidth();		// width of the Component
 	  int height = getHeight();		// height of the Component
 	  
 	  	  //scenery
-	  
+	  	  
 	  	  g2.setColor(Color.cyan);	
 	  	  Rectangle sky = new Rectangle(0, 0, width, 2*height/3);
 	  	  g2.fill(sky);
+	  	  g2.setColor(Color.white);
+	  	  Ellipse2D.Double cloudA = new Ellipse2D.Double(3*width/4, height/16, width/8, height/16);
+	  	  g2.fill(cloudA);
+	  	  Ellipse2D.Double cloudB = new Ellipse2D.Double(25*width/32, 3*height/32, width/8, height/16);
+	  	  g2.fill(cloudB);
+	  	  Ellipse2D.Double cloudC = new Ellipse2D.Double(22*width/32, 3*height/32, width/8, height/16);
+	  	  g2.fill(cloudC);
 	  	  g2.setColor(Color.yellow);
 	  	  Rectangle beach = new Rectangle(0, 2*height/3, width, height);
 	  	  g2.fill(beach);
@@ -34,6 +43,7 @@ public void paintComponent(Graphics g)
 	  	  g2.setColor(Color.blue);
 	  	  Rectangle ocean = new Rectangle(0, 2*height/3, width, height/32);
 	  	  g2.fill(ocean);
+	  	  
 	      //legs
 	  
 	  	  g2.setColor(Color.black);
@@ -54,12 +64,18 @@ public void paintComponent(Graphics g)
 		  g2.setColor(Color.magenta);
 		  Ellipse2D.Double body = new Ellipse2D.Double(width/4, height/6, width/2, height/2); //draws the body ellipse
 		  g2.fill(body);
-		  
+		  g2.setColor(Color.BLACK);
+		  Line2D.Double centerLine = new Line2D.Double(width/2, 2*height/3, width/2, height/2);
+		  g2.draw(centerLine);
+		  Line2D.Double leftLine = new Line2D.Double(width/2, height/2, width/4, 7*height/16);
+		  g2.draw(leftLine);
+		  Line2D.Double rightLine = new Line2D.Double(width/2, height/2, 3*width/4, 7*height/16);
+		  g2.draw(rightLine);
 		  //Ears
 		  g2.setColor(Color.red);
-		  Ellipse2D.Double leftEar = new Ellipse2D.Double(47*width/128, 10*height/64, width/64, height/32);
+		  Ellipse2D.Double leftEar = new Ellipse2D.Double(93*width/256, 10*height/64, 2*width/64, height/32);
 		  g2.fill(leftEar);
-		  Ellipse2D.Double rightEar = new Ellipse2D.Double(67*width/128, 10*height/64, width/64, height/32);
+		  Ellipse2D.Double rightEar = new Ellipse2D.Double(155*width/256, 10*height/64, 2*width/64, height/32);
 		  g2.fill(rightEar);
 		  //Head
 		  g2.setColor(Color.DARK_GRAY);
@@ -105,7 +121,34 @@ public void paintComponent(Graphics g)
 		  Line2D.Double noseR = new Line2D.Double(33*width/64, 13*height/64, width/2, 3*height/16);
 		  g2.draw(noseR);
 		  
-		  //Mouth
+		  //Teeth
+		  g2.setColor(Color.white);
+		  Rectangle teeth = new Rectangle(29*width/64, 15*height/64, width/64, height/64);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(0, height/64);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  teeth.translate(-width/64, 0);
+		  g2.fill(teeth);
+		  
+		  //Teeth ouline
 		  g2.setColor(Color.RED);
 		  Rectangle mouth = new Rectangle(29*width/64, 15*height/64, width/64, height/64);
 		  g2.draw(mouth);
