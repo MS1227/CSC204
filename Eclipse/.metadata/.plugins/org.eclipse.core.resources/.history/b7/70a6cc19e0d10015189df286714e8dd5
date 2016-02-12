@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 public class MercManViewer {
 
 	public static void main(String[] args) {
-		
+		// TODO Auto-generated method stub
 		
 		  JFrame frame = new JFrame(); //Creates a new object, frame, of the JFrame class.
 	      frame.setSize(400, 550);     //Sets JFrame size to 400px x 550px.
