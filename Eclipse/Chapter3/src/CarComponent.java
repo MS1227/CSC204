@@ -17,8 +17,17 @@ public class CarComponent extends JComponent
       int y = getHeight() - 30;
 
       Car car2 = new Car(x, y);
+      
+      Car car3 = new Car(0, y);
+      Car car4 = new Car(x, 0);
+      Car car5 = new Car((getWidth()/2)-30, (getHeight()/2)-15);
 
       car1.draw(g2);
-      car2.draw(g2);      
+      car2.draw(g2);     
+      car3.draw(g2);
+      car4.draw(g2);
+      car5.draw(g2);
+      
+      
    }
 }
