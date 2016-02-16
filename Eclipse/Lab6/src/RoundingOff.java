@@ -4,6 +4,6 @@ public class RoundingOff
 {
    public static void main (String [] args)
    {
-      System.out.println ("round (3.4) = "+ Math.round (3.4));
+      System.out.println ("round (-3.8) = "+ Math.rint (-3.8));
    }
 }

@@ -8,4 +8,5 @@
 <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D.Double"/>
 <fullyQualifiedTypeName name="java.awt.Font"/>
 <fullyQualifiedTypeName name="java.awt.geom.Line2D.Double"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
 </qualifiedTypeNameHistroy>

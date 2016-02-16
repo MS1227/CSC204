@@ -9,10 +9,10 @@ public class DoubleFactorial {
 		      //  Check that there is a command line parameter
 			  Scanner in = new Scanner(System.in);
 		      System.out.print ("Please enter a value: ");
-		      value = in.nextByte();
+		      value = in.nextInt();
 		      
 		      //  Change the int below to a different type to work with other types
-		      short result = fact (value);
+		      double result = fact (value);
 		      System.out.println (value + "! = " + result);
 		   }
 
@@ -23,11 +23,11 @@ public class DoubleFactorial {
 		    * @return the value of n!
 		    */
 		// Change the int below to a different type to work with other types
-		   private static short fact (int value)
+		   private static double fact (int value)
 		   {
 			//  Change the int below to a different type to work with other types
-			  short product = 1;
-		      for (short i = 2; i <= value; i++)
+			  double product = 1;
+		      for (double i = 2; i <= value; i++)
 		      {
 		         product *= i;
 		      }
