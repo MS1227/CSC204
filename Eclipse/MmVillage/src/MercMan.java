@@ -14,6 +14,8 @@ public class MercMan
 	private int startY;
 	private int mmWidth;
 	private int mmHeight;
+	private int drawHair = 10;
+	
 	
 	public MercMan(int x, int y, int w, int h)
 	{
@@ -22,7 +24,7 @@ public class MercMan
 		mmWidth = w;
 		mmHeight = h;
 	}
-	
+	private double hairStartX = startX+mmWidth/4;
 	public void draw(Graphics2D g2)
 	{
 		Ellipse2D.Double body = new Ellipse2D.Double(startX+mmWidth/4, startY+mmHeight/4, mmWidth/2, mmHeight/2);
@@ -38,6 +40,7 @@ public class MercMan
 		Line2D.Double noseB = new Line2D.Double(nL, nR);
 		Line2D.Double noseR = new Line2D.Double(nR, nT);
 		Ellipse2D.Double mouth = new Ellipse2D.Double(startX+13*mmWidth/32, startY+10*mmHeight/32, 3*mmWidth/16, mmHeight/32);
+		Ellipse2D.Double teeth = new Ellipse2D.Double(startX+13*mmWidth/32, startY+41*mmHeight/128, 3*mmWidth/16, mmHeight/64);
 		Line2D.Double lips = new Line2D.Double(startX+13*mmWidth/32, startY+21*mmHeight/64, startX+19*mmWidth/32, startY+21*mmHeight/64);
 		Ellipse2D.Double earL = new Ellipse2D.Double(startX+29*mmWidth/128, startY+7*mmHeight/32, mmWidth/16, mmHeight/32);
 		Ellipse2D.Double earR = new Ellipse2D.Double(startX+91*mmWidth/128, startY+7*mmHeight/32, mmWidth/16, mmHeight/32);
@@ -57,11 +60,12 @@ public class MercMan
 		
 		g2.setColor(Color.CYAN);
 		g2.fill(head);
-		g2.setColor(Color.WHITE);
-		g2.fill(eyeL);
-		g2.fill(eyeR);
 		g2.setColor(Color.RED);
 		g2.fill(mouth);
+		g2.setColor(Color.WHITE);
+		g2.fill(teeth);
+		g2.fill(eyeL);
+		g2.fill(eyeR);
 		g2.setColor(Color.black);
 		g2.fill(pupilL);
 		g2.fill(pupilR);
@@ -69,6 +73,17 @@ public class MercMan
 		g2.draw(noseB);
 		g2.draw(noseR);
 		g2.draw(lips);
+		
+		while (drawHair > 0)
+		{
+			Ellipse2D.Double hair = new Ellipse2D.Double(hairStartX, startY, mmWidth/8, 5*mmHeight/32);
+			g2.draw(hair);
+			hairStartX = hairStartX+(mmWidth/32);
+			g2.draw(hair);
+			drawHair = drawHair-1;
+			System.out.println(drawHair);
+			System.out.println("start value: " +hairStartX);
+		}
 		
 		
 		

@@ -41,7 +41,7 @@ public class MercManComponent extends JComponent
       case 1: // Centered MercMan
     	  (new MercMan(frameWidth/2-50,frameHeight/2-100,100,200)).draw(g2);
  
-    	  	break;
+    	  break;
     	  	
       case 2: // Four Corners
     	  (new MercMan(0,0,100,200)).draw(g2);
