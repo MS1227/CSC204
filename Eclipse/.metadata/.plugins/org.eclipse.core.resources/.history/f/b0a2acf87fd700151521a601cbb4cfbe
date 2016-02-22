@@ -14,8 +14,6 @@ public class MercMan
 	private int startY;
 	private int mmWidth;
 	private int mmHeight;
-	private int drawHair = 20;
-	private int hairStartX = startX+mmWidth/4;
 	
 	public MercMan(int x, int y, int w, int h)
 	{
@@ -73,15 +71,19 @@ public class MercMan
 		g2.draw(noseB);
 		g2.draw(noseR);
 		g2.draw(lips);
+		double hairStartX = startX+11*mmWidth/32;
 		
-		while (drawHair >0)
+		System.out.println(hairStartX);
+		
+		int drawHair = 20; 
+		while (drawHair > 0)
 		{
-			Ellipse2D.Double hair = new Ellipse2D.Double(hairStartX, startY, mmWidth/8, 5*mmHeight/32);
+			Ellipse2D.Double hair = new Ellipse2D.Double(hairStartX, startY, mmWidth/32, 5*mmHeight/32);
 			g2.draw(hair);
-			hairStartX = hairStartX+mmWidth/32;
+			hairStartX = hairStartX + mmWidth/64;
 			g2.draw(hair);
-			drawHair = drawHair-1;
-			System.out.println(drawHair);
+			drawHair = drawHair - 1;
+			
 		}
 		
 		

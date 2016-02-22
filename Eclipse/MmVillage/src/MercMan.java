@@ -80,7 +80,7 @@ public class MercMan
 		{
 			Ellipse2D.Double hair = new Ellipse2D.Double(hairStartX, startY, mmWidth/32, 5*mmHeight/32);
 			g2.draw(hair);
-			hairStartX = hairStartX + mmWidth/64;
+			hairStartX = hairStartX + mmWidth/64.0;
 			g2.draw(hair);
 			drawHair = drawHair - 1;
 			
