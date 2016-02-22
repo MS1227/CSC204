@@ -47,7 +47,7 @@ public class GeoCalc {
 		
 		System.out.println("The circle with points A and B at the ends of a diameter:");                     // Prints text in quotations.
 		System.out.println();                                                                                // Line break.
-		System.out.println("        Has its center at: ("+((xB-xA)/2)+","+((yB-yA)/2)+")");                  // Calculates coordinates of center of a circle by halving the distance between the X and Y coordinates of the inputed values.
+		System.out.println("        Has its center at: ("+((xB+xA)/2)+","+((yB+yA)/2)+")");                  // Calculates coordinates of center of a circle by halving the distance between the X and Y coordinates of the inputed values.
 		System.out.println("        Has a radius of:    "+(distance)/2);                                     // Calculates radius by halving the earlier results of the distance formula.
 		System.out.println("        Has a diameter of:  "+distance);                                         // Diameter is equal to the result of the distance formula.
 		System.out.println("        Has circumference:  "+(Math.PI*distance));                               // Calculates the circumference by multiplying Pi * diameter.
