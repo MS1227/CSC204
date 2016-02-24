@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
 /**
  * A Greep is an alien creature that likes to collect tomatoes.
  * 
- * @author (Matt Schnider)
+ * @author (your name here)
  * @version 0.1
  */
 public class Greep extends Creature
@@ -36,35 +36,45 @@ public class Greep extends Creature
     {
         super.act();   // do not delete! leave as first statement in act().
         if (carryingTomato()) {
-      
             if(atShip()) {
                 dropTomato();
             }
             else {
-                turnHome();
                 if (atWater())
                     turn(130);
+                     move();
+                  
                 if (atWorldEdge())
-                    turn(125);
-                move();
-                spit("purple");
-                
+                    turn(134);
+                    move();
+                turnHome();
+               
+                spit("orange");
+ 
             }
         }
         else {
-            if (seePaint("purple"))
+            if (atWater())
+                turn(150);
+            if (atWorldEdge())
+                turn(134);
+            if (seePaint("orange"))
             {
+                if (!atWater())
                 turnHome();
                 turn(180);
-                move();
-            }    
-            if (atWater())
-                turn(50);
-            if (atWorldEdge())
-                turn(135);
-            move();
-            checkFood();
+            }
             spit("red");
+            move();
+            if (seePaint("red") && seePaint("orange"))
+            {
+               turn(90);
+               move();
+               turn(45);
+               move();
+            }
+            checkFood();
+   
         }
     }
 
