@@ -1,11 +1,15 @@
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.GradientPaint;
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.awt.Stroke;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Ellipse2D.Double;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.util.Random;
 
 
 public class MercMan
@@ -14,6 +18,7 @@ public class MercMan
 	private int startY;
 	private int mmWidth;
 	private int mmHeight;
+
 	
 	public MercMan(int x, int y, int w, int h)
 	{
@@ -22,9 +27,11 @@ public class MercMan
 		mmWidth = w;
 		mmHeight = h;
 	}
+
 	
 	public void draw(Graphics2D g2)
 	{
+		
 		Ellipse2D.Double body = new Ellipse2D.Double(startX+mmWidth/4, startY+mmHeight/4, mmWidth/2, mmHeight/2);
 		Ellipse2D.Double head = new Ellipse2D.Double(startX+mmWidth/4, startY+mmHeight/8, mmWidth/2, mmHeight/4);
 		Ellipse2D.Double eyeL = new Ellipse2D.Double(startX+3*mmWidth/8, startY+3*mmHeight/16, mmWidth/16, mmHeight/16 );
@@ -45,12 +52,26 @@ public class MercMan
 		Line2D.Double legL = new Line2D.Double(startX+7*mmWidth/16, startY+11*mmHeight/16, startX+mmWidth/4, startY+mmHeight);
 		Line2D.Double legR = new Line2D.Double(startX+9*mmWidth/16, startY+11*mmHeight/16, startX+3*mmWidth/4, startY+mmHeight);
 		
+		Random armY = new Random();
+		int randArm = armY.nextInt(3*mmHeight/4 - mmHeight/4) +mmHeight/4;
+		Random armY2 = new Random();
+		int randArm2 = armY2.nextInt(3*mmHeight/4 - mmHeight/4) +mmHeight/4;
+		g2.setStroke(new BasicStroke(12));
+		Line2D.Double leftArm = new Line2D.Double(startX+5*mmWidth/16, startY+mmHeight/2, startX+mmWidth/8, startY+randArm );
+		g2.draw(leftArm);
+		Line2D.Double rightArm = new Line2D.Double(startX+11*mmWidth/16, startY+mmHeight/2, startX+7*mmWidth/8, startY+randArm2);
+		g2.draw(rightArm);
+		
+		Random rBody = new Random();
+		float bR = rBody.nextFloat();
+		float bG = rBody.nextFloat();
+		float bB = rBody.nextFloat();
 		g2.setColor(Color.black);
 		g2.setStroke(new BasicStroke(12));
 		g2.draw(legL);
 		g2.draw(legR);
 		g2.setStroke(new BasicStroke(1));
-		g2.setColor(Color.green);
+		g2.setColor(new Color(bR,bG,bB));
 		g2.fill(body);
 		g2.setColor(Color.magenta);
 		g2.fill(earL);
@@ -71,13 +92,21 @@ public class MercMan
 		g2.draw(noseB);
 		g2.draw(noseR);
 		g2.draw(lips);
+		
+		
+		
 		double hairStartX = startX+11*mmWidth/32;
-		
-		System.out.println(hairStartX);
-		
 		int drawHair = 20; 
+		Random rand = new Random();
+	
+		float r = rand.nextFloat();
+		float g = rand.nextFloat();
+		float b = rand.nextFloat();
+	
 		while (drawHair > 0)
 		{
+			g2.setStroke(new BasicStroke(2));
+			g2.setColor(new Color(r,g,b));
 			Ellipse2D.Double hair = new Ellipse2D.Double(hairStartX, startY, mmWidth/32, 5*mmHeight/32);
 			g2.draw(hair);
 			hairStartX = hairStartX + mmWidth/64.0;

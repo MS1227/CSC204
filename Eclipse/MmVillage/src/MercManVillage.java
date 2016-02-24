@@ -28,7 +28,7 @@ public class MercManVillage
       System.out.println("\t2. Four Corners");
       System.out.println("\t3. Line of Four");
       System.out.println("\t4. Crowded");
-    //System.out.println("\t5. ??????????");
+      System.out.println("\t5. Go Bears!");
       System.out.print("Your Choice? ");
       
       // Read in their choice
