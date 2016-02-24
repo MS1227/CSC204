@@ -69,7 +69,7 @@ public class MercManComponent extends JComponent
     	    break;
     	    
     
-      case 5:
+      case 5: // Go Bears. Draws a Mercer "M" of MercMen.
     	 int mWidth = frameWidth/8;
     	 int mHeight = frameHeight/4;
     	 for (int y=0; y<4; y++)

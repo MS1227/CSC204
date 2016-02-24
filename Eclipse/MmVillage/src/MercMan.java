@@ -9,7 +9,12 @@ import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.util.Random;
 
-
+/*MercMan file to be used with the MercManVillage Main by Matt Schnider.
+ * Due February 24, 2016
+ * 
+ * Below are instance variables that are passed values from constructors based
+ * on user input.
+ */
 public class MercMan
 {
 	private int startX;
@@ -17,7 +22,10 @@ public class MercMan
 	private int mmWidth;
 	private int mmHeight;
 
-	
+/*Constructor that takes the value of four integers passed in from selected case in 
+ * Component file and loads them into the respective instance variable.
+ * 
+ */
 	public MercMan(int x, int y, int w, int h)
 	{
 		startX = x;
@@ -26,10 +34,16 @@ public class MercMan
 		mmHeight = h;
 	}
 
-	
+/* 
+ * Graphics section that draws the MercPeople in the same fashion as prior MercMan project, but with some improvements.
+ * Random number generators are used to vary color of both body and hair as well as the ending Y coordinate of the arms
+ * creating a waving effect each time the frame is resized. Hair is drawn using a while loop to draw 19 concentric 
+ * ellipses.
+ * 
+ */
 	public void draw(Graphics2D g2)
 	{
-		
+		//body, head, eyes, pupils, nose, mouth, teeth, lips, ears, and legs are instantiated.
 		Ellipse2D.Double body = new Ellipse2D.Double(startX+mmWidth/4, startY+mmHeight/4, mmWidth/2, mmHeight/2);
 		Ellipse2D.Double head = new Ellipse2D.Double(startX+mmWidth/4, startY+mmHeight/8, mmWidth/2, mmHeight/4);
 		Ellipse2D.Double eyeL = new Ellipse2D.Double(startX+3*mmWidth/8, startY+3*mmHeight/16, mmWidth/16, mmHeight/16 );
@@ -50,6 +64,7 @@ public class MercMan
 		Line2D.Double legL = new Line2D.Double(startX+7*mmWidth/16, startY+11*mmHeight/16, startX+mmWidth/4, startY+mmHeight);
 		Line2D.Double legR = new Line2D.Double(startX+9*mmWidth/16, startY+11*mmHeight/16, startX+3*mmWidth/4, startY+mmHeight);
 		
+		//Random generators for ending Y-coordinate of arms as well as the instantiation and drawing of the arms. 
 		Random armY = new Random();
 		int randArm = armY.nextInt(3*mmHeight/4 - mmHeight/4) +mmHeight/4;
 		Random armY2 = new Random();
@@ -60,10 +75,13 @@ public class MercMan
 		Line2D.Double rightArm = new Line2D.Double(startX+11*mmWidth/16, startY+mmHeight/2, startX+7*mmWidth/8, startY+randArm2);
 		g2.draw(rightArm);
 		
+		//Random number generator for body color
 		Random rBody = new Random();
 		float bR = rBody.nextFloat();
 		float bG = rBody.nextFloat();
 		float bB = rBody.nextFloat();
+		
+		//drawing of instantiated objects
 		g2.setColor(Color.black);
 		g2.setStroke(new BasicStroke(12));
 		g2.draw(legL);
@@ -74,7 +92,6 @@ public class MercMan
 		g2.setColor(Color.magenta);
 		g2.fill(earL);
 		g2.fill(earR);
-		
 		g2.setColor(Color.CYAN);
 		g2.fill(head);
 		g2.setColor(Color.RED);
@@ -92,11 +109,16 @@ public class MercMan
 		g2.draw(lips);
 		
 		
+		/*
+		 * While loop for drawing hair. The integer drawHair is reduced by one after each cycle of the loop as a 
+		 * control to break out of the loop condition when it reaches 0.
+		 */
 		
 		double hairStartX = startX+11*mmWidth/32;
-		int drawHair = 20; 
+		int drawHair = 20;
+		
+		//Random number generator for hair color.
 		Random rand = new Random();
-	
 		float r = rand.nextFloat();
 		float g = rand.nextFloat();
 		float b = rand.nextFloat();
