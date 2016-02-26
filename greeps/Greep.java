@@ -38,43 +38,38 @@ public class Greep extends Creature
         if (carryingTomato()) {
             if(atShip()) {
                 dropTomato();
-                turn(180);
+                turn(180); // turns 180 degrees to go back to the tomato pile.
             }
             else {
                 if (atWater())
+                {
                     turn(140);
-                   
+                }   
   
                 if (atWorldEdge())
                     turn(130);
                   
                 
                 move();
-                spit("orange");
+                spit("orange"); //spits orange showing the path back to the tomatoes
                 turnHome();
  
             }   
         }
        else {
             if (seePaint("purple")){
-            turn(90);
-            move();
+            turn(90); //Causes a greep to wait for another greep at a tomato pile until a friend passes by
+            move();   //to help him load the tomatoes.
             turn(90);
             move();
             turn(90);
         }
+         
             if (atWater())
                 turn(130);
             if (atWorldEdge())
                 turn(134);
-          
-            /*if (seePaint("orange") && !atWater())
-            {
-                
-                turnHome();
-                turn(180);
-           }
-           */
+           
             move();
             checkFood();
         
@@ -90,14 +85,14 @@ public class Greep extends Creature
         TomatoPile tomatoes = (TomatoPile) getOneIntersectingObject(TomatoPile.class);
         if(tomatoes != null) {
             loadTomato();
-            spit("purple");
+            spit("purple"); //Spits purple if near tomatoes, causing the greep to wait for another greep.
         
            // Note: this attempts to load a tomato onto *another* Greep. It won't
             // do anything if we are alone here.
         }
     }
 
-
+ 
     /**
      * This method specifies the name of the author (for display on the result board).
      */
