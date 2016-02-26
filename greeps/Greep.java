@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
 /**
  * A Greep is an alien creature that likes to collect tomatoes.
  * 
- * @author (your name here)
+ * @author (Matt Schnider)
  * @version 0.1
  */
 public class Greep extends Creature
@@ -38,43 +38,46 @@ public class Greep extends Creature
         if (carryingTomato()) {
             if(atShip()) {
                 dropTomato();
+                turn(180);
             }
             else {
                 if (atWater())
-                    turn(130);
-                     move();
-                  
+                    turn(140);
+                   
+  
                 if (atWorldEdge())
-                    turn(134);
-                    move();
-                turnHome();
-               
+                    turn(130);
+                  
+                
+                move();
                 spit("orange");
+                turnHome();
  
-            }
+            }   
         }
-        else {
+       else {
+            if (seePaint("purple")){
+            turn(90);
+            move();
+            turn(90);
+            move();
+            turn(90);
+        }
             if (atWater())
-                turn(150);
+                turn(130);
             if (atWorldEdge())
                 turn(134);
-            if (seePaint("orange"))
+          
+            /*if (seePaint("orange") && !atWater())
             {
-                if (!atWater())
+                
                 turnHome();
                 turn(180);
-            }
-            spit("red");
+           }
+           */
             move();
-            if (seePaint("red") && seePaint("orange"))
-            {
-               turn(90);
-               move();
-               turn(45);
-               move();
-            }
             checkFood();
-   
+        
         }
     }
 
@@ -87,7 +90,9 @@ public class Greep extends Creature
         TomatoPile tomatoes = (TomatoPile) getOneIntersectingObject(TomatoPile.class);
         if(tomatoes != null) {
             loadTomato();
-            // Note: this attempts to load a tomato onto *another* Greep. It won't
+            spit("purple");
+        
+           // Note: this attempts to load a tomato onto *another* Greep. It won't
             // do anything if we are alone here.
         }
     }
@@ -98,7 +103,7 @@ public class Greep extends Creature
      */
     public static String getAuthorName()
     {
-        return "Anonymous";  // write your name here!
+        return "Matt Schnider";  // write your name here!
     }
 
 
