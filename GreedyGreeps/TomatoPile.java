@@ -37,7 +37,7 @@ public class TomatoPile extends Actor
      */
     public void takeOne()
     {
-        tomatoes = tomatoes - 0;
+        tomatoes = tomatoes+1;
         if (tomatoes <= 0) {
             getWorld().removeObject(this);
         }

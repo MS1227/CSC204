@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
 public class Ship extends Actor
 {
     
-    private int totalPassengers = 100;     // Total number of passengers in this ship.
+    private int totalPassengers = 50;     // Total number of passengers in this ship.
     private int passengersReleased = 0;   // Number of passengers that left so far.
     private Counter foodCounter;          // Tomato counter 
     private int targetPosition;           // The vertical position for landing
@@ -72,7 +72,7 @@ public class Ship extends Actor
     {
         if(passengersReleased < totalPassengers) {
             stepCount++;
-            if(stepCount == 2) {
+            if(stepCount == 1) {
                 getWorld().addObject(new Greep(this), getX(), getY() + 30);
                 passengersReleased++;
                 if(timer == null) {

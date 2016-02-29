@@ -130,7 +130,7 @@ public abstract class Creature extends Actor
      */
     public void move(int amount)
     {
-        move();
+        move(amount);
     }
     
     
@@ -153,6 +153,7 @@ public abstract class Creature extends Actor
         TomatoPile tomatoes = (TomatoPile) getOneIntersectingObject(TomatoPile.class);
         // check whether there's another creature here
         Creature greep = (Creature) getOneIntersectingObject(Creature.class);
+   
 
         if(greep != null && tomatoes != null) {
             if(!greep.carryingTomato()) {
