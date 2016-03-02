@@ -10,7 +10,7 @@ import java.util.List;
  */
 public abstract class Creature extends Actor
 {
-    private static final double WALKING_SPEED = 90;
+    private static final double WALKING_SPEED = 5;
     private static final int TIME_TO_SPIT = 1;
 
     /** Indicate whether we have a tomato with us */
@@ -64,7 +64,8 @@ public abstract class Creature extends Actor
     {
         int deltaX = ship.getX() - getX();
         int deltaY = ship.getY() - getY();
-        setRotation((int) (180 * Math.atan2(deltaY, deltaX) / Math.PI));
+        //setRotation((int) (180 * Math.atan2(deltaY, deltaX) / Math.PI));
+        setLocation(ship.getX(), ship.getY());
     }
     
     
@@ -87,9 +88,9 @@ public abstract class Creature extends Actor
             return;
             
         // there's a 3% chance that we randomly turn a little off course
-        if (randomChance(0)) {
+        //if (randomChance(0)) {
             turn((Greenfoot.getRandomNumber(3) - 1) * 10);
-        }
+       // }
 
         double angle = Math.toRadians( getRotation() );
         int x = (int) Math.round(getX() + Math.cos(angle) * WALKING_SPEED);
@@ -121,17 +122,17 @@ public abstract class Creature extends Actor
         if(timeToSpit > 0)
             timeToSpit--;
             
-        moved = true;
+        moved = false;
     }
 
     /**
      * To avoid confusion/cheating, calling the built-in Greenfoot
      * move(int amount) does the same as the Creature move() function.
-     */
+     
     public void move(int amount)
     {
         move(amount);
-    }
+    *}
     
     
     /**
@@ -156,13 +157,15 @@ public abstract class Creature extends Actor
    
 
         if(greep != null && tomatoes != null) {
-            if(!greep.carryingTomato()) {
+            if(!greep.carryingTomato()) 
+            {
                 tomatoes.takeOne();
                 greep.carryTomato();
-            }
+           }
+           else move(0);
         }
     }
-
+    
     
     /**
      * Check whether we can see paint of a given color where we are sitting.

@@ -14,8 +14,8 @@ public class TomatoPile extends Actor
 {
     private static Random randomizer = new Random();
 
-    private static final int SIZE = 300;
-    private static final int HALFSIZE = SIZE / 100;
+    private static final int SIZE = 1000;
+    private static final int HALFSIZE = SIZE / 5;
     private static final Color color1 = new Color(255, 100, 100);
     private static final Color color2 = new Color(227, 49, 49);
     private static final Color color3 = new Color(100, 20, 20);
@@ -83,7 +83,7 @@ public class TomatoPile extends Actor
      */
     private int randomCoord()
     {
-        int val = HALFSIZE + (int) (randomizer.nextGaussian() * (HALFSIZE / 2));
+        int val = HALFSIZE + (int) (randomizer.nextGaussian() * (HALFSIZE ));
         if (val < 0)
             return 0;
         if (val > SIZE - 2)

@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
  * @author (your name here)
  * @version 0.1
  */
-public class Greep extends Creature
+public class Greep extends Creature 
 {
     // Remember: you cannot extend the Greep's memory. So:
     // no additional fields (other than final fields) allowed in this class!
@@ -41,15 +41,18 @@ public class Greep extends Creature
                 turn(180);
             }
             else {
+               
                 turnHome();
-                move();
+               
             }
         }
         else {
             if(atWorldEdge())
-                turn(120);
-            if(seePaint("purple"))
-                turn(90);
+                turn(150);
+            if(seePaint("purple")){
+                
+                turnHome();
+            }
             move();
             checkFood();
         }

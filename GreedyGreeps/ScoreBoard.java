@@ -37,7 +37,7 @@ public class ScoreBoard extends Actor
     {
         int total = 0;
         for(int val : scores) {
-            total += val*100;
+            total += val;
         }
         makeImage(title, text, prefix, total);
         addMapScores(scores.length-1, scores);

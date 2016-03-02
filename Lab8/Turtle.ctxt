@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Turtle
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ checkKeys()
+comment2.text=\n\ Check\ whether\ the\ control\ keys\ are\ being\ pressed,\ and\ turn\n\ if\ they\ are.\n
+comment3.params=
+comment3.target=void\ tryToEatLettuce()
+comment3.text=\n\ Check\ whether\ we\ can\ see\ Lettuce.\ If\ we\ can,\ eat\ it.\n
+comment4.params=
+comment4.target=void\ tryToEatBug()
+comment5.params=
+comment5.target=void\ superTurtle()
+numComments=6
