@@ -26,7 +26,10 @@ public class Snake extends Animal
         }
         if(count == 0)
             count = 30;
-       
+        if(Turtle.lastTurtleStanding == true)
+            {
+               setImage("cherries.png");  
+            }
         turnAtEdge();
         tryToEatTurtle();
     }
@@ -51,14 +54,16 @@ public class Snake extends Animal
     public void tryToEatTurtle()
     {
         
-        if (canSee(Turtle.class) && Turtle.isSuperTurtle == false && Turtle.lettuce !=0)
+        if (canSee(Turtle.class) && Turtle.isSuperTurtle == false && Turtle.lettuce !=0 && Turtle.lastTurtleStanding == false)
         {
             eat(Turtle.class);
             Greenfoot.playSound("au.wav");
             Greenfoot.stop();
          }
+         
+        }
      
-    }
+  
     
  
 }

@@ -4,9 +4,11 @@ public class Turtle extends Animal
 {
     private int powerUp = 0;
     public static boolean isSuperTurtle = false;
+    public static boolean lastTurtleStanding = false;
     private int playTrack = 0;
     private int turnRate = 5;
     public static int lettuce = 10;
+   
     
     public void act()
     {
@@ -14,10 +16,12 @@ public class Turtle extends Animal
         checkKeys();
         tryToEatLettuce();
         tryToEatBug();
+        tryToEatCherry();
         if( powerUp <= 0)
         {
             setImage("turtle.png");
             isSuperTurtle = false;
+            turnRate = 5;
   
         }
         else
@@ -25,10 +29,15 @@ public class Turtle extends Animal
             
             superTurtle();
             isSuperTurtle = true;
-            turnRate = 7;
+            turnRate = 15;
             move(7);
             powerUp = powerUp - 1;
         }
+        if(getWorld().numberOfObjects() == 1)
+        {
+            Greenfoot.stop();
+        }
+        
        System.out.println(isSuperTurtle);
     }
     
@@ -56,9 +65,13 @@ public class Turtle extends Animal
         if (canSee(Lettuce.class) )
         {
             eat(Lettuce.class);
-            Greenfoot.playSound("slurp.wav"); 
-            lettuce = lettuce - 1;
+            Greenfoot.playSound("slurp.wav");
+            lettuce = lettuce--;
             System.out.println(lettuce);
+            if(getWorld().numberOfObjects() <= 4)
+            {
+              lastTurtleStanding = true;
+            }
         }
     }
     
@@ -73,7 +86,12 @@ public class Turtle extends Animal
            if(powerUp >  0)
            {
             superTurtle();
+            
         }
+        if(getWorld().numberOfObjects() <= 4)
+            {
+              lastTurtleStanding = true;
+            }
     }
     }
     
@@ -87,4 +105,12 @@ public class Turtle extends Animal
         }
        
     }
+    public void tryToEatCherry()
+    {
+       if( lastTurtleStanding == true && canSee(Snake.class) )
+       {
+            eat(Snake.class);
+            Greenfoot.playSound("slurp.wav");
+       }
+}
 }

@@ -13,7 +13,7 @@ public class TurtleWorld extends World
         int randomY = Greenfoot.getRandomNumber(150);
         int width = getWidth();
         int height = getHeight();
-        
+ 
         
         addObject(new Turtle(),randomX,randomY);
         
@@ -36,6 +36,10 @@ public class TurtleWorld extends World
         addObject(new Lettuce(), 6*width/2, 3*height/4);
         addObject(new Lettuce(), 3*width/4, 3*height/4);
         addObject(new Lettuce(), width, height);
+        
+        
+         
+        
         
         
        // populateWorld();

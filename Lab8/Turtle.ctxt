@@ -12,4 +12,6 @@ comment4.params=
 comment4.target=void\ tryToEatBug()
 comment5.params=
 comment5.target=void\ superTurtle()
-numComments=6
+comment6.params=
+comment6.target=void\ tryToEatCherry()
+numComments=7

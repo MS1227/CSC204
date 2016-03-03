@@ -89,7 +89,7 @@ public abstract class Creature extends Actor
             
         // there's a 3% chance that we randomly turn a little off course
         //if (randomChance(0)) {
-            turn((Greenfoot.getRandomNumber(3) - 1) * 10);
+            turn((Greenfoot.getRandomNumber(1) ) * 1);
        // }
 
         double angle = Math.toRadians( getRotation() );
@@ -159,8 +159,13 @@ public abstract class Creature extends Actor
         if(greep != null && tomatoes != null) {
             if(!greep.carryingTomato()) 
             {
-                tomatoes.takeOne();
+               
+               tomatoes.takeOne();
+          
                 greep.carryTomato();
+                
+               
+                
            }
            else move(0);
         }
@@ -226,6 +231,7 @@ public abstract class Creature extends Actor
             
         if(atShip()) {
             ship.storeTomato(this);
+          ship.storeTomato(this);
         }
         carryingTomato = false;
         setImage(getCurrentImage());
