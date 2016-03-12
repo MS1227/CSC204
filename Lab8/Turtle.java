@@ -34,11 +34,12 @@ public class Turtle extends Animal
             powerUp = powerUp - 1;
         }
         if(getWorld().numberOfObjects() == 1)
-        {
+        {   
+            lastTurtleStanding = false;
             Greenfoot.stop();
         }
         
-       System.out.println(isSuperTurtle);
+      
     }
     
     /**
@@ -67,7 +68,6 @@ public class Turtle extends Animal
             eat(Lettuce.class);
             Greenfoot.playSound("slurp.wav");
             lettuce = lettuce--;
-            System.out.println(lettuce);
             if(getWorld().numberOfObjects() <= 4)
             {
               lastTurtleStanding = true;
