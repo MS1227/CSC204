@@ -19,3 +19,4 @@ public class Lettuce extends Actor
         turn(20);
     }    
 }
+ 

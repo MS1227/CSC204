@@ -15,7 +15,7 @@ public class Turtle extends Animal
     {
        counter=pointCounter;
       
-    }
+    } 
     
     public void act()
     {
@@ -24,11 +24,13 @@ public class Turtle extends Animal
         tryToEatLettuce();
         tryToEatBug();
         tryToEatCherry();
-        System.out.println(lastTurtleStanding);
+        System.out.println(isSuperTurtle);
+        System.out.println(playTrack);
         if( powerUp <= 0)
         {
             setImage("turtle.png");
             isSuperTurtle = false;
+            //playTrack = 0;
             turnRate = 5;
   
         }
@@ -36,6 +38,7 @@ public class Turtle extends Animal
         {
             
             superTurtle();
+            playTrack = 0;
             isSuperTurtle = true;
             turnRate = 15;
             move(7);
@@ -43,11 +46,14 @@ public class Turtle extends Animal
         }
         if(lastTurtleStanding == true)
         {
-            if(playTrack == 0)
-            {
-                Greenfoot.playSound("Alarm.wav");
-                playTrack += 1;
-            }
+            
+            if(playTrack == 1)
+           {   
+               
+               Greenfoot.playSound("Alarm.wav");
+               playTrack = playTrack - 1;
+           }    
+            
             getWorld().setBackground("board.jpg"); 
             
         }
@@ -84,8 +90,9 @@ public class Turtle extends Animal
             lettuce = lettuce--;
             counter.add(1);
              
-            if(counter.getValue() >= 29)
+            if(counter.getValue() >= 29 && isSuperTurtle == false)
             {
+              playTrack = 1;
               lastTurtleStanding = true;
             }
         }
@@ -107,6 +114,8 @@ public class Turtle extends Animal
         }
         if(counter.getValue() >= 29)
             {
+              playTrack = 1;
+              isSuperTurtle = false;
               lastTurtleStanding = true;
             }
     }
@@ -120,15 +129,17 @@ public class Turtle extends Animal
             Greenfoot.playSound("mario1.wav");
             playTrack = playTrack - 1;
         }
+        
         if(counter.getValue() >= 29)
             {
+              playTrack = 1;
               lastTurtleStanding = true;
             }
     }
     public void tryToEatCherry()
     {
        if( lastTurtleStanding == true && canSee(Snake.class) )
-       {
+       { 
             eat(Snake.class);
             Greenfoot.playSound("slurp.wav");
             counter.add(25);
