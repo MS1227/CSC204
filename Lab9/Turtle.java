@@ -24,8 +24,7 @@ public class Turtle extends Animal
         tryToEatLettuce();
         tryToEatBug();
         tryToEatCherry();
-        System.out.println(isSuperTurtle);
-        System.out.println(playTrack);
+       
         if( powerUp <= 0)
         {
             setImage("turtle.png");
