@@ -10,10 +10,12 @@ public class LoopDemo {
 		Scanner in = new Scanner(System.in);
 		System.out.print("Dim: ");
 		int dim = in.nextInt();
-		
-		System.out.print("Lines? ");
-		int lines = in.nextInt();
-		
+		int lines;
+		do
+		{
+		System.out.print("Lines (1-100)? ");
+		lines = in.nextInt();
+		} while (lines <= 0 || lines > 100);
 		
 		      JFrame frame = new JFrame();
 
