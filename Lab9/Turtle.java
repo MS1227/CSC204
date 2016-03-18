@@ -107,24 +107,25 @@ public class Turtle extends Animal
            Greenfoot.playSound("smw_power-up.wav");
            powerUp = 150;
            playTrack = 1;
-           if(powerUp >  0)
+        if(getWorld().numberOfObjects() == 5)
+            {
+              powerUp = 0;
+              isSuperTurtle = false;
+              lastTurtleStanding = true;
+            }
+           if(powerUp >  0 && counter.getValue() < 29)
            {
             superTurtle();
             
         }
-        if(counter.getValue() >= 29)
-            {
-              playTrack = 1;
-              isSuperTurtle = false;
-              lastTurtleStanding = true;
-            }
+       
     }
     }
     
     public void superTurtle()
     {
         setImage("turtle2.png");
-        if(playTrack == 1 && isSuperTurtle == false)
+        if(playTrack == 1 && isSuperTurtle == false && lastTurtleStanding == false)
         {
             Greenfoot.playSound("mario1.wav");
             playTrack = playTrack - 1;
