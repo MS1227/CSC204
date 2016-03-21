@@ -33,7 +33,8 @@ public class Loopy {
 		 
 		 // Prompt the user for the information, and read it into our variables.
 		 Scanner in = new Scanner(System.in);
-		 System.out.println("Which graphic do you want to produce?\n" +
+		 do
+		 { System.out.println("Which graphic do you want to produce?\n" +
 				 			"0 = graph paper\n" +
 				 			"1 = concentric circles\n" +
 				 			"2 = grid of circles\n" +
@@ -41,14 +42,23 @@ public class Loopy {
 				 			"4 = YOUR SECOND LOOPY GRAPHIC\n");
 		 
 		 
-		 graphicNumber = in.nextInt(); 	// ******* YOU SHOULD VERIFY THE INPUT IS IN RANGE
-		 
-		 System.out.print("What dimension would you like for the graphic: ");
+		 graphicNumber = in.nextInt(); 
+		 }// ******* YOU SHOULD VERIFY THE INPUT IS IN RANGE
+		 while(graphicNumber < 0 || graphicNumber > 4);
+		 do
+		 {
+		 System.out.print("What dimension would you like for the graphic (100-1000): ");
 		 dim = in.nextInt();			//  ******  YOU SHOULD VERIFY THE DIM IS 100-1000
+		 }
+		 while(dim < 100 || dim > 1000);
 		 
-		 System.out.print("What count would you like for this graphic: " );
+		 do
+		 {
+		 System.out.print("What count would you like for this graphic (1-dimension value): " );
+		
 		 count = in.nextInt();			//  ******  YOU SHOULD VERIFY THE COUNT IS 1-DIM
-		 
+		 }
+		 while(count < 1 || count > dim);
 		 // Here is a cool color picker program from Java Swing
 		 color1 = JColorChooser.showDialog(
                  null,
@@ -64,7 +74,7 @@ public class Loopy {
 		  JFrame frame = new JFrame();
 
 	      frame.setSize(dim+16, dim+38);  // These add-ons are the thickness of the frame's border
-	      frame.setTitle("BOB's Loopy Graphics!"); // *****  PUT YOUR NAME HERE
+	      frame.setTitle("Matt's Loopy Graphics!"); // *****  PUT YOUR NAME HERE
 	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	      LoopyPattern component = new LoopyPattern(dim,count,graphicNumber,color1,color2);

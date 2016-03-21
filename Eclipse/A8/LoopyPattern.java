@@ -13,11 +13,11 @@ import java.util.Random;
 import javax.swing.JComponent;
 import java.awt.BasicStroke;
 public class LoopyPattern extends JComponent  {
-	// COMMENT
+	// Instance variables to store data passed in by the constructor.
 	private int dim, count, graphicNumber;
 	private Color color1, color2, currentColor;
 	
-	//  COMMENT
+	//  Constructor that gathers data passed in by main and assigns it to the instance variables.
 	public LoopyPattern(int d, int c, int g, Color c1, Color c2)
 	{
 		super();
@@ -35,7 +35,8 @@ public class LoopyPattern extends JComponent  {
 	      // Recover Graphics2D
 	      Graphics2D g2 = (Graphics2D) g;
 	      g2.setColor(currentColor);
-	           
+	      int startX;
+	      int startY;
 	      int step;
 	      switch (graphicNumber)
 	      {
@@ -51,6 +52,15 @@ public class LoopyPattern extends JComponent  {
 	    	  }
 	    	  break;
 	      case 1:  							////// Concentric Circles
+	    	  startX = 0;
+	    	  startY = 0;
+	    	  step = (dim/count);
+	    	  for (int i=0; i<=count; i++)
+	    	  {
+	    		  g2.setColor(currentColor);
+	    		  g2.fill(new Ellipse2D.Double(startX + i*step, startY + i*step , dim/(i+1), dim/(i+1)));
+	    		  switchColors();
+	    	  }
 	    	  
 	    	  break;
 	      case 2:							///// Grid of Circles
