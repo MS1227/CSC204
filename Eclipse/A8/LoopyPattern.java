@@ -35,8 +35,7 @@ public class LoopyPattern extends JComponent  {
 	      // Recover Graphics2D
 	      Graphics2D g2 = (Graphics2D) g;
 	      g2.setColor(currentColor);
-	      int startX;
-	      int startY;
+	      
 	      int step;
 	      switch (graphicNumber)
 	      {
@@ -52,14 +51,25 @@ public class LoopyPattern extends JComponent  {
 	    	  }
 	    	  break;
 	      case 1:  							////// Concentric Circles
-	    	  startX = 0;
-	    	  startY = 0;
-	    	  step = (dim/count);
-	    	  for (int i=0; i<=count; i++)
+	    	
+	    	  step = (dim/(2*count));
+	    	  for (int i=0; i<count; i++)
 	    	  {
-	    		  g2.setColor(currentColor);
-	    		  g2.fill(new Ellipse2D.Double(startX + i*step, startY + i*step , dim/(i+1), dim/(i+1)));
-	    		  switchColors();
+	    		  if(i == 0)
+	    			 {
+	    			  g2.setColor(currentColor);
+		    		  g2.fill(new Ellipse2D.Double(0, 0 , dim, dim));
+		    		  switchColors(); 
+	    			 }
+	    		  else
+	    		  {
+	    			  g2.setColor(currentColor);
+		    		  g2.fill(new Ellipse2D.Double(i*step, i*step , dim, dim));
+		    		  switchColors(); 
+	    		  }
+		    		 
+	    		  
+	    		
 	    	  }
 	    	  
 	    	  break;
