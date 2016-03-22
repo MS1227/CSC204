@@ -18,11 +18,11 @@ public class LoopyPattern extends JComponent  {
 	private Color color1, color2, currentColor;
 	
 	//  Constructor that gathers data passed in by main and assigns it to the instance variables.
-	public LoopyPattern(int d, int c, int g, Color c1, Color c2)
+	public LoopyPattern(double d, double c, int g, Color c1, Color c2)
 	{
 		super();
-		dim = d;
-		count = c;
+		dim = (int) d;
+		count = (int) c;
 		graphicNumber = g;
 		color1 = c1;
 		color2 = c2;
@@ -52,22 +52,15 @@ public class LoopyPattern extends JComponent  {
 	    	  break;
 	      case 1:  							////// Concentric Circles
 	    	
-	    	  step = (dim/(2*count));
-	    	  for (int i=0; i<count; i++)
-	    	  {
-	    		  if(i == 0)
-	    			 {
+	    	  step = dim/count;
+	    	  double xYDouble;
+	    	  for (int i=count, z=0; i>0 && z<count ; i--, z++)
+	    	  {	    		  
+	    			  xYDouble = (double)(z*dim)/(2*count);
 	    			  g2.setColor(currentColor);
-		    		  g2.fill(new Ellipse2D.Double(0, 0 , dim, dim));
+		    		  g2.fill(new Ellipse2D.Double(xYDouble, xYDouble , i*step, i*step));
 		    		  switchColors(); 
-	    			 }
-	    		  else
-	    		  {
-	    			  g2.setColor(currentColor);
-		    		  g2.fill(new Ellipse2D.Double(i*step, i*step , dim, dim));
-		    		  switchColors(); 
-	    		  }
-		    		 
+		    		  System.out.println(i+ " " +z+" "+ xYDouble);	    		  		    		 
 	    		  
 	    		
 	    	  }

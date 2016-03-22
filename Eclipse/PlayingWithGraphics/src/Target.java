@@ -36,7 +36,7 @@ public class Target extends JComponent {
 	      g2.setColor(Color.red);
 	      g2.fill(c1);
 	      
-	      Ellipse2D.Double c2 = new Ellipse2D.Double(width/6,height/50+height/6,2*width/3,2*height/3);
+	      Ellipse2D.Double c2 = new Ellipse2D.Double(width/6,height/6,2*width/3,2*height/3);
 	      g2.setColor(Color.white);
 	      g2.fill(c2);
 	      
