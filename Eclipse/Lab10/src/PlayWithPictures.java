@@ -146,13 +146,16 @@ public class PlayWithPictures
 
 	private static void myRazzleDazzle()
 	{
-		for (int x = 0; x < width-11; x++)
-			for (int y = 0; y < height-11; y++)
+		for (int x = 0; x < width; x++)
+			for (int y = 0; y < height; y++)
 			{
 				//Color original = thePicture.getColorAt(x, y);
 				Color original = thePicture.getColorAt(x,y);
-				Color tenAheadTenBelow = thePicture.getColorAt(x+10, y+10);
-				thePicture.setColorAt(x, y, tenAheadTenBelow);
+				int red = original.getRed();
+				int green = original.getGreen();
+				int blue  = original.getBlue();
+				Color greenOut = new Color(red-red,green,blue-blue);
+				thePicture.setColorAt(x, y, greenOut );
 				
 				
 			}
