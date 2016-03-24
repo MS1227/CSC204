@@ -38,8 +38,8 @@ public class Loopy {
 				 			"0 = graph paper\n" +
 				 			"1 = concentric circles\n" +
 				 			"2 = grid of circles\n" +
-				 			"3 = YOUR FIRST LOOPY GRAPHIC\n" +
-				 			"4 = YOUR SECOND LOOPY GRAPHIC\n");
+				 			"3 = grid of squares\n" +
+				 			"4 = overlapping circles\n");
 		 
 		 
 		 graphicNumber = in.nextInt(); 

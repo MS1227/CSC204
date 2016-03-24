@@ -9,6 +9,7 @@ import java.awt.Rectangle;
 import java.awt.geom.Arc2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
+import java.awt.geom.Rectangle2D;
 import java.util.Random;
 import javax.swing.JComponent;
 import java.awt.BasicStroke;
@@ -52,15 +53,15 @@ public class LoopyPattern extends JComponent  {
 	    	  break;
 	      case 1:  							////// Concentric Circles
 	    	
-	    	  step = dim/count;
+	    	  double step1 = (double)dim/count;
 	    	  double xYDouble;
 	    	  for (int i=count, z=0; i>0 && z<count ; i--, z++)
 	    	  {	    		  
 	    			  xYDouble = (double)(z*dim)/(2*count);
 	    			  g2.setColor(currentColor);
-		    		  g2.fill(new Ellipse2D.Double(xYDouble, xYDouble , i*step, i*step));
+		    		  g2.fill(new Ellipse2D.Double(xYDouble, xYDouble , i*step1, i*step1));
 		    		  switchColors(); 
-		    		  System.out.println(i+ " " +z+" "+ xYDouble);	    		  		    		 
+		    		  	    		  		    		 
 	    		  
 	    		
 	    	  }
@@ -68,8 +69,55 @@ public class LoopyPattern extends JComponent  {
 	    	  break;
 	      case 2:							///// Grid of Circles
 	       	  
+	    	  double circleD = (double)dim/count; 	  
+	    	  for(int x = 0; x<count; x++)
+	    		  
+	    	  {
+	    		  for(int y = 0; y<count; y++)
+	    		  {
+	    		  g2.setColor(currentColor);
+	    	  	  g2.fill(new Ellipse2D.Double(x*circleD,y*circleD,circleD,circleD));
+	    	  	  switchColors();
+	    	  	  
+	    		  }
+	    		  if(count%2 == 0)
+	    			  switchColors();
+	    	  }
 	    	  break;
+	      case 3:
+	    	  double squareD = (double)dim/count; 	  
+	    	  for(int x = 0; x<count; x++)
+	    		  
+	    	  {
+	    		  for(int y = 0; y<count; y++)
+	    		  {
+	    		  g2.setColor(currentColor);
+	    	  	  g2.fill(new Rectangle2D.Double(x*squareD,y*squareD,squareD,squareD));
+	    	  	  switchColors();
+	    	  	  
+	    		  }
+	    		  if(count%2 == 0)
+	    			  switchColors();
+	    	  }
+	      case 4:						
+	       	  
+	    	  double circleD1 = (double)dim/count; 	  
+	    	  for(int x = 0; x<count; x++)
+	    		  
+	    	  {
+	    		  for(int y = 0; y<count; y++)
+	    		  {
+	    		  g2.setColor(currentColor);
+	    	  	  g2.fill(new Ellipse2D.Double(x*circleD1,y*circleD1,2*circleD1,circleD1));
+	    	  	  switchColors();
+	    	  	  
+	    		  }
+	    		  if(count%2 == 0)
+	    			  switchColors();
+	    		  	
 	      }
+	      }
+	      
 	   }
 	 
 	 private void switchColors()

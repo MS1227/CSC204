@@ -12,9 +12,9 @@
 <fullyQualifiedTypeName name="java.awt.GradientPaint"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="java.awt.Rectangle"/>
-<fullyQualifiedTypeName name="java.awt.geom.Rectangle2D"/>
 <fullyQualifiedTypeName name="java.awt.geom.Rectangle2D.Double"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D.Double"/>
+<fullyQualifiedTypeName name="java.awt.geom.Rectangle2D"/>
 </qualifiedTypeNameHistroy>

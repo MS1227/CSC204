@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.util.Scanner;
+//Picture transformation main by Matt Schnider
 
 public class PlayWithPictures
 {
@@ -154,8 +155,14 @@ public class PlayWithPictures
 				int red = original.getRed();
 				int green = original.getGreen();
 				int blue  = original.getBlue();
-				Color greenOut = new Color(red-red,green,blue-blue);
-				thePicture.setColorAt(x, y, greenOut );
+				Color hiRed = new Color(red,25,25);
+				Color gray = new Color(red-red,Math.abs(green-30),Math.abs(blue-30));
+				if(red >= 155)
+				{
+				thePicture.setColorAt(x, y, hiRed );
+				}
+				else
+					thePicture.setColorAt(x, y, gray);
 				
 				
 			}
