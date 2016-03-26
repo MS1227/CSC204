@@ -127,8 +127,7 @@ public class LoopyPattern extends JComponent  {
 	    			  switchColors();
 	    		  	
 	      }
-	    	  break;
-	      }	
+	      }
 	      
 	   }
 	 

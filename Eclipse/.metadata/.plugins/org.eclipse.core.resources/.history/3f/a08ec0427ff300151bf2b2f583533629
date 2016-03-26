@@ -109,7 +109,6 @@ public class LoopyPattern extends JComponent  {
 	    		  if(count%2 == 0)
 	    			  switchColors();
 	    	  }
-	    	  break;
 	      case 4:						
 	       	  
 	    	  double circleD1 = (double)dim/count; 	  
@@ -127,8 +126,7 @@ public class LoopyPattern extends JComponent  {
 	    			  switchColors();
 	    		  	
 	      }
-	    	  break;
-	      }	
+	      }
 	      
 	   }
 	 
