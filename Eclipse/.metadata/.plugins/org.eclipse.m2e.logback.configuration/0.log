@@ -486,3 +486,6 @@ java.net.UnknownHostException: services.gradle.org
 =======
 >>>>>>> d6fb7bc2d8b5d87eeff68d8b04d14a50060d09d5
 >>>>>>> ea4f042413e7fe5644499c86aad032ce0e20ec6e
+2016-03-29 12:06:28,868 [Thread-7] ERROR org.eclipse.jgit.util.FS - fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
+
+2016-03-29 12:18:04,946 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.

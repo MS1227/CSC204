@@ -127,8 +127,6 @@ public class LoopyPattern extends JComponent  {
 	    	  break;
 	    	  /*
 	    	   * ****Overlapping circles****
-	    	   * Similar to grid of circles. x and y coordinates are adjusted to make the circles
-	    	   * overlap by half.
 	    	   */
 	      case 4:						
 	       	  
@@ -137,7 +135,7 @@ public class LoopyPattern extends JComponent  {
 	    	  for(int x = 0; x<2*count; x++)
 	    		  
 	    	  {
-	    		  for(int y = 0; y<2*count; y++)
+	    		  for(int y = 0; y<count; y++)
 	    		  {
 	    		  g2.setColor(currentColor);
 	    	  	  g2.fill(new Ellipse2D.Double(x*circleOffset,y*circleOffset,circleD1,circleD1));
@@ -152,7 +150,7 @@ public class LoopyPattern extends JComponent  {
 	      }	
 	      
 	   }
-	 //method for switching between the user selected colors.
+	 
 	 private void switchColors()
 	 {
 		if(currentColor == color1)

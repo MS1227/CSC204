@@ -33,7 +33,7 @@ public class Loopy {
 		 
 		 // Prompt the user for the information, and read it into our variables.
 		 Scanner in = new Scanner(System.in);
-		 do // Sentinel loop to verify input is in range.
+		 do
 		 { System.out.println("Which graphic do you want to produce?\n" +
 				 			"0 = graph paper\n" +
 				 			"1 = concentric circles\n" +
@@ -43,17 +43,16 @@ public class Loopy {
 		 
 		 
 		 graphicNumber = in.nextInt(); 
-		 }
+		 }// ******* YOU SHOULD VERIFY THE INPUT IS IN RANGE
 		 while(graphicNumber < 0 || graphicNumber > 4);
-		 
-		 do // Sentinel loop to verify input is in range.
+		 do
 		 {
 		 System.out.print("What dimension would you like for the graphic (100-1000): ");
 		 dim = in.nextInt();			//  ******  YOU SHOULD VERIFY THE DIM IS 100-1000
 		 }
 		 while(dim < 100 || dim > 1000);
 		 
-		 do // Sentinel loop to verify input is in range.
+		 do
 		 {
 		 System.out.print("What count would you like for this graphic (1-dimension value): " );
 		
