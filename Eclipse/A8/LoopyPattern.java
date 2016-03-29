@@ -59,7 +59,11 @@ public class LoopyPattern extends JComponent  {
 	    	  break;
 	    	  /*
 	    	   * ****Concentric Circles****
-	    	   * 
+	    	   * Variable step1 contains the double result of the dimension divided by
+	    	   * the total number of circles. xYDouble is declared for use in the for 
+	    	   * loop where it is used to calculate the x and y cooridinate of each circle.
+	    	   * step1 is used to calculate the dimension of each circle. Color is switched after
+	    	   * each circle is drawn.
 	    	   */
 	      case 1:  							
 	    	
@@ -77,7 +81,11 @@ public class LoopyPattern extends JComponent  {
 	    	  }
 	    	  
 	    	  break;
-	      case 2:							///// Grid of Circles
+	    	  /* 
+	    	   * ****Grid of circles****
+	    	   * 
+	    	   */
+	      case 2:						
 	       	  
 	    	  double circleD = (double)dim/count; 	  
 	    	  for(int x = 0; x<count; x++)
