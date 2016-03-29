@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+INDEX VERSION 1.127+/Users/MattSchnider/CSC204/Eclipse/.metadata/.plugins/org.eclipse.jdt.core
+4067826494.index
+=======
 INDEX VERSION 1.127+Z:\CSC204\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
 147281095.index
 1535625244.index
+<<<<<<< HEAD
 1533429332.index
+=======
+>>>>>>> 899f1e62c251ad48eb3d38732842460ce6a26bac
+>>>>>>> d6fb7bc2d8b5d87eeff68d8b04d14a50060d09d5

@@ -3737,6 +3737,30 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2016-03-26 14:16:21.978
 !MESSAGE fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
 
+<<<<<<< HEAD
+!SESSION 2016-03-27 17:25:55.936 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/MattSchnider/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/MattSchnider/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-03-27 17:26:03.932
+!MESSAGE fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
+
+!SESSION 2016-03-27 18:34:24.130 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/MattSchnider/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/MattSchnider/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-03-27 18:34:30.126
+!MESSAGE fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
+
+=======
 !SESSION 2016-03-28 09:21:07.394 -----------------------------------------------
 eclipse.buildId=4.4.0.I20140606-1215
 java.version=1.7.0_67
@@ -4266,6 +4290,7 @@ org.osgi.framework.BundleException: Unable to acquire the state change lock for 
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+<<<<<<< HEAD
 !SESSION 2016-03-29 09:24:21.112 -----------------------------------------------
 eclipse.buildId=4.4.0.I20140606-1215
 java.version=1.7.0_67
@@ -4615,3 +4640,6 @@ org.osgi.framework.BundleException: Unable to acquire the state change lock for 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-29 10:26:42.696
 !MESSAGE Can't handle %s as parent of completion location.
+=======
+>>>>>>> 899f1e62c251ad48eb3d38732842460ce6a26bac
+>>>>>>> d6fb7bc2d8b5d87eeff68d8b04d14a50060d09d5
