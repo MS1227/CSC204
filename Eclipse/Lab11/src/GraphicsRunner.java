@@ -21,7 +21,7 @@ public class GraphicsRunner extends JFrame
 		
 		
 						
-		getContentPane().add(new ColoredBoxes(count));					
+		getContentPane().add(new RandomColoredBoxes(count));					
 						
 		
 				

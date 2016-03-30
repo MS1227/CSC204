@@ -12,14 +12,18 @@ import javax.swing.JPanel;
 
 public class RandomColoredBoxes extends JPanel
 {
+private int width;
+private int height;
+private int numberOfBoxes;
+
 	private Timer timer;
 	private final static int SLEEP = 110;
 	
-	public RandomColoredBoxes()
+	public RandomColoredBoxes(int count)
 	{		
 		setBackground(Color.BLACK);
 		setVisible(true);
-
+		numberOfBoxes = count;
 		ActionListener paintCaller = new ActionListener(){
 			public void actionPerformed(ActionEvent event)
 			{
@@ -38,16 +42,23 @@ public class RandomColoredBoxes extends JPanel
 		window.setFont(new Font("TAHOMA",Font.BOLD,12));
 	  	window.drawString("Graphics Lab Lab11k ", 20, 40);
 	  	window.drawString("Drawing boxes with nested loops ", 20, 80);
-
+	  	width = getWidth();
+		height = getHeight();
 	  	drawBoxes(window);
 	}
 
 	public void drawBoxes(Graphics window)
 	{
-		//for loop to to across the x - getWidth() might be useful
+		int boxStepY = height/numberOfBoxes;
+		int boxStepX = width/numberOfBoxes;
+		for(int x = 0; x < numberOfBoxes; x++)
+		{
 		
-			//for loop to go down the y - getHeight() might be useful
-			
-				//draw random colored boxes
+			for(int y = 0; y < numberOfBoxes; y++)
+			{
+				window.setColor(new Color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256)));
+				window.fillRect(x*boxStepX, y*boxStepY, boxStepX, boxStepY);
+			}
+		}
 	}
 }
