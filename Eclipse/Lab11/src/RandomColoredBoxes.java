@@ -3,11 +3,16 @@
 import java.awt.Graphics; 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Graphics2D;
 import java.util.Random;
+
 import javax.swing.Timer;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.geom.Rectangle2D;
 import java.awt.Canvas;
+
 import javax.swing.JPanel;
 
 public class RandomColoredBoxes extends JPanel
@@ -49,15 +54,16 @@ private int numberOfBoxes;
 
 	public void drawBoxes(Graphics window)
 	{
-		int boxStepY = height/numberOfBoxes;
-		int boxStepX = width/numberOfBoxes;
+		double boxStepX = (double)width/numberOfBoxes;
+		double boxStepY = (double)height/numberOfBoxes;
+		Graphics2D window2 = (Graphics2D) window;
 		for(int x = 0; x < numberOfBoxes; x++)
 		{
 		
 			for(int y = 0; y < numberOfBoxes; y++)
 			{
 				window.setColor(new Color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256)));
-				window.fillRect(x*boxStepX, y*boxStepY, boxStepX, boxStepY);
+				window2.fill(new Rectangle2D.Double(x*boxStepX, y*boxStepY, boxStepX, boxStepY));
 			}
 		}
 	}
