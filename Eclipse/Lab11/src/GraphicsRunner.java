@@ -1,4 +1,4 @@
-//Student
+//Lab11 Matt Schnider
 
 import java.util.Scanner;
 
