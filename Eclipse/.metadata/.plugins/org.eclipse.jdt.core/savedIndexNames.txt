@@ -1,18 +1,17 @@
-<<<<<<< HEAD
 INDEX VERSION 1.127+/Users/MattSchnider/CSC204/Eclipse/.metadata/.plugins/org.eclipse.jdt.core
-2238786472.index
-353965938.index
+1384487945.index
 3630079742.index
+353965938.index
 221257237.index
 1833648217.index
 308786522.index
 4122244616.index
 1749520324.index
-1819685514.index
+4067826494.index
 1852345425.index
 272310744.index
 156905802.index
-4067826494.index
+1819685514.index
 3712507179.index
 3302703152.index
 3966064240.index
@@ -25,12 +24,4 @@ INDEX VERSION 1.127+/Users/MattSchnider/CSC204/Eclipse/.metadata/.plugins/org.ec
 2545238116.index
 1660167734.index
 1271342938.index
-1384487945.index
-=======
-INDEX VERSION 1.127+Z:\CSC204\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
-147281095.index
-509694168.index
-1487658251.index
-1535625244.index
-2143315025.index
->>>>>>> c1b8dae4bac60eb17e108780d96a7866478cbf86
+2238786472.index
