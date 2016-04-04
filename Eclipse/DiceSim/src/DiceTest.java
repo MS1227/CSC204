@@ -3,11 +3,13 @@ public class DiceTest {
 
 	public static void main(String[] args) {
 
-		Dice dice1 = new Dice(15);
-		for(int i=0; i<10; i++)
-		{
-		System.out.println(dice1.roll() );
-		}
+		DiceSim dice1 = new DiceSim();
+		//for(int i=0; i<10; i++)
+	//	{
+		System.out.println(dice1);
+		
+
+		//}
 	}
 
 }
