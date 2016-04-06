@@ -1,6 +1,6 @@
 
 import java.util.*;
-
+//Lab12 by Matt Schnider
 public class MyArray
 {
   final static int NUM_ITEMS = 6;
@@ -13,6 +13,7 @@ public class MyArray
 
 	printOut (a);
 
+	System.out.println();
 	System.out.println("Array Sum :  " + sumUp(a));
 	System.out.println("Number of Positive Values :  " + positiveCount(a));
   }
@@ -21,7 +22,7 @@ public class MyArray
   {
 	for(int i = 0; i <a.length; i++)
 	{
-		System.out.print("Value for "+ i +": ");
+		System.out.print("Enter value "+ (i+1) +": ");
 		
 		a[i] = in.nextInt();
 		
@@ -33,10 +34,15 @@ public class MyArray
 
   private static void printOut (int[] a)
   {
+		
+	System.out.println("****** Array Values ******");
 	for(int i = 0; i<a.length; i++)
 	{
-		System.out.println("Value at "+i+": "+a[i] );
+
+		System.out.print(a[i] + " " );
 	}
+	System.out.println();
+	System.out.print("**************************");
 
 
 
@@ -46,19 +52,29 @@ public class MyArray
 	
   private static int sumUp (int[] a)
   {
-	// ToDo: Fill this in
+	int sumUp = 0;
+	
+	for(int i = 0; i<a.length; i++)
+	{
+		sumUp += a[i];
+	}
 
-	     //  Dummy line   
-	     return 0;
+	       
+	     return sumUp;
   }
 
   private static int positiveCount (int[] a)
   {
-	// ToDo: Fill this in.
+	int localCount = 0;
+	for(int i = 0; i<a.length; i++)
+	{
+		if(a[i] > 0)
+			localCount++;
+	}
 
 
-	     //  Dummy line   
-	     return 0;
+	
+	     return localCount;
 
 
 
