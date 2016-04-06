@@ -3,10 +3,10 @@ public class DiceTest {
 
 	public static void main(String[] args) {
 
-		DiceSim dice1 = new DiceSim();
+		DiceSim dice1 = new DiceSim(6,10,3);
 		//for(int i=0; i<10; i++)
 	//	{
-		System.out.println(dice1);
+		dice1.runSimulation();
 		
 
 		//}

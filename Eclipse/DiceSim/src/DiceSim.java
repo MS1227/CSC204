@@ -13,15 +13,68 @@ public DiceSim()
 	numOfDice = 1;
 	numOfRolls = 100;
 	countOfRolls = new int[sidesOfDice*numOfDice +1];
-	theDice = new int[numOfDice];
-	for(int i = 0; i<countOfRolls.length; i++)
+		for(int i = 0; i<countOfRolls.length; i++)
 		{
 			countOfRolls[i] = 0;
 		}
+	theDice = new int[numOfDice];
+	
 
+}
+public DiceSim(int arg1)
+{
+	sidesOfDice = 6;
+	numOfDice = 1;
+	numOfRolls = arg1;
+	countOfRolls = new int[sidesOfDice*numOfDice +1];
+		for(int i = 0; i<countOfRolls.length; i++)
+		{
+			countOfRolls[i] = 0;
+		}
+		theDice = new int[numOfDice];
+		
+
+}
+
+public DiceSim(int arg1, int arg2)
+{
+	sidesOfDice = 6;
+	numOfDice = arg1;
+	numOfRolls = arg2;
+	countOfRolls = new int[sidesOfDice*numOfDice +1];
+		for(int i = 0; i<countOfRolls.length; i++)
+		{
+			countOfRolls[i] = 0;
+		}
+		theDice = new int[numOfDice];
+		
+
+}
+public DiceSim(int arg1, int arg2, int arg3)
+{
+	sidesOfDice = arg1;
+	numOfDice = arg2;
+	numOfRolls = arg3;
+	countOfRolls = new int[sidesOfDice*numOfDice +1];
+		for(int i = 0; i<countOfRolls.length; i++)
+		{
+			countOfRolls[i] = 0;
+		}
+		theDice = new int[numOfDice];	
+
+}
+public void runSimulation()
+{
+	for(int i=numOfDice; i > 0; i--)
+	{
+		new Dice();
+		
+	}
+	System.out.print(Dice.roll());
+}
 }
 
 	
-}
+
 
 
