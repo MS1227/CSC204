@@ -1,8 +1,8 @@
 
 public class Dice 
 {
-private static int sides;
-private static int last;
+private int sides;
+private int last;
 
 //Constructor that is passed nothing and sets sides = 6 and last = 1.
 public Dice()
@@ -20,13 +20,13 @@ public Dice(int s)
 }
 //Roll method that computes a random number 1-sides and stores
 //this value in instance var last.
-public static int roll()
+public int roll()
 {
 	return last = (int) (Math.random()*sides+1);
 }
 
 //Method to return the value stored in last.
-public static int getLastRoll()
+public int getLastRoll()
 {
 	return last;
 }

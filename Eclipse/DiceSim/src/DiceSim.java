@@ -5,7 +5,7 @@ private int sidesOfDice;
 private int numOfDice;
 private int numOfRolls;
 private int [] countOfRolls;
-private Dice [] theDice;
+private Dice[] theDice;
 
 public DiceSim()
 {
@@ -17,8 +17,10 @@ public DiceSim()
 		{
 			countOfRolls[i] = 0;
 		}
-	theDice = new int[numOfDice];
-	
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
 
 }
 public DiceSim(int arg1)
@@ -31,7 +33,10 @@ public DiceSim(int arg1)
 		{
 			countOfRolls[i] = 0;
 		}
-		theDice = new int[numOfDice];
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
 		
 
 }
@@ -46,7 +51,10 @@ public DiceSim(int arg1, int arg2)
 		{
 			countOfRolls[i] = 0;
 		}
-		theDice = new int[numOfDice];
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
 		
 
 }
@@ -60,17 +68,16 @@ public DiceSim(int arg1, int arg2, int arg3)
 		{
 			countOfRolls[i] = 0;
 		}
-		theDice = new int[numOfDice];	
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
 
 }
 public void runSimulation()
 {
-	for(int i=numOfDice; i > 0; i--)
-	{
-		new Dice();
-		
-	}
-	System.out.print(Dice.roll());
+
+	System.out.println("helloworld");
 }
 }
 
