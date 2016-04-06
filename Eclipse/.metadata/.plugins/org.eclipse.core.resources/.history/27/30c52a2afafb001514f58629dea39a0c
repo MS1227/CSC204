@@ -4,8 +4,8 @@ public class DiceSim
 private int sidesOfDice;
 private int numOfDice;
 private int numOfRolls;
-private int [] countOfRolls;
-private Dice [] theDice;
+int [] countOfRolls;
+int [] theDice;
 
 public DiceSim()
 {
