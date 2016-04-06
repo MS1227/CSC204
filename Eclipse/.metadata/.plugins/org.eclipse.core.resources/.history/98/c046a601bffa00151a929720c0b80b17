@@ -68,9 +68,9 @@ public void runSimulation()
 	for(int i=numOfDice; i > 0; i--)
 	{
 		new Dice();
-		
+		System.out.println(Dice.roll());
+		System.out.println("I got called correctly");
 	}
-	System.out.print(Dice.roll());
 }
 }
 

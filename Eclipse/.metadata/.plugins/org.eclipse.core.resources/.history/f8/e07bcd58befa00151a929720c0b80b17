@@ -65,12 +65,7 @@ public DiceSim(int arg1, int arg2, int arg3)
 }
 public void runSimulation()
 {
-	for(int i=numOfDice; i > 0; i--)
-	{
-		new Dice();
-		
-	}
-	System.out.print(Dice.roll());
+	
 }
 }
 

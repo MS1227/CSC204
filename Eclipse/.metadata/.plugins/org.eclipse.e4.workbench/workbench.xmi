@@ -50,7 +50,7 @@
           <tags>persp.perspSC:org.eclipse.wst.xml.ui.perspective</tags>
           <tags>persp.actionSet:com.google.gdt.eclipse.core.actionSet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_WUb24fnoEeWVa_wjtxZZxg" selectedElement="_WUb26_noEeWVa_wjtxZZxg" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_WUb24vnoEeWVa_wjtxZZxg" containerData="2600" selectedElement="_WUb24_noEeWVa_wjtxZZxg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_WUb24vnoEeWVa_wjtxZZxg" containerData="2600" selectedElement="_WUb25_noEeWVa_wjtxZZxg">
               <children xsi:type="basic:PartStack" xmi:id="_WUb24_noEeWVa_wjtxZZxg" elementId="topLeft" containerData="5000" selectedElement="_WUb25PnoEeWVa_wjtxZZxg">
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_WUb25PnoEeWVa_wjtxZZxg" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_WUUiIPnoEeWVa_wjtxZZxg"/>
@@ -64,7 +64,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_WUb26vnoEeWVa_wjtxZZxg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_WUbP0PnoEeWVa_wjtxZZxg"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_WUb26_noEeWVa_wjtxZZxg" containerData="7400" selectedElement="_WUb27PnoEeWVa_wjtxZZxg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_WUb26_noEeWVa_wjtxZZxg" containerData="7400" selectedElement="_WUb28PnoEeWVa_wjtxZZxg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_WUb27PnoEeWVa_wjtxZZxg" containerData="6600" selectedElement="_WUb27_noEeWVa_wjtxZZxg" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_WUb27fnoEeWVa_wjtxZZxg" elementId="org.eclipse.gef.ui.palette_viewMStack" toBeRendered="false" containerData="1600">
                   <children xsi:type="advanced:Placeholder" xmi:id="_WUb27vnoEeWVa_wjtxZZxg" elementId="org.eclipse.gef.ui.palette_view" toBeRendered="false" ref="_WUaBsPnoEeWVa_wjtxZZxg"/>
@@ -100,7 +100,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_WUKxIPnoEeWVa_wjtxZZxg" elementId="org.eclipse.ui.editorss" selectedElement="_WUKxIfnoEeWVa_wjtxZZxg">
-      <children xsi:type="basic:PartStack" xmi:id="_WUKxIfnoEeWVa_wjtxZZxg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_O7SIgPprEeWMefa-P4asfA">
+      <children xsi:type="basic:PartStack" xmi:id="_WUKxIfnoEeWVa_wjtxZZxg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_HqDMAPpqEeWMefa-P4asfA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -111,18 +111,18 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_HqDMAPpqEeWMefa-P4asfA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DiceSim.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DiceSim.java&quot; partName=&quot;DiceSim.java&quot; title=&quot;DiceSim.java&quot; tooltip=&quot;DiceSim/src/DiceSim.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DiceSim/src/DiceSim.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;288&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_O7SIgPprEeWMefa-P4asfA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DiceTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DiceTest.java&quot; partName=&quot;DiceTest.java&quot; title=&quot;DiceTest.java&quot; tooltip=&quot;DiceSim/src/DiceTest.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DiceSim/src/DiceTest.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;181&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DiceSim.java&quot; partName=&quot;DiceSim.java&quot; title=&quot;DiceSim.java&quot; tooltip=&quot;DiceSim/src/DiceSim.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DiceSim/src/DiceSim.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1268&quot; selectionTopPixel=&quot;697&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_O7SIgPprEeWMefa-P4asfA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DiceTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DiceTest.java&quot; partName=&quot;DiceTest.java&quot; title=&quot;DiceTest.java&quot; tooltip=&quot;DiceSim/src/DiceTest.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DiceSim/src/DiceTest.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;103&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_6Xx8UPp3EeWHMIJNhK5AuA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DiceDemo.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DiceDemo.java&quot; partName=&quot;DiceDemo.java&quot; title=&quot;DiceDemo.java&quot; tooltip=&quot;DiceSim/DiceDemo.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/DiceSim/DiceDemo.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;117&quot;/>&#xA;&lt;/editor>"/>
@@ -199,7 +199,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WOF-UPnoEeWVa_wjtxZZxg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="__0OBwPp1EeWHMIJNhK5AuA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_VxhXKPnoEeWVa_wjtxZZxg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_CcDEMPq5EeWG0LJ00FjwNA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_VxhXKPnoEeWVa_wjtxZZxg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WOF-UfnoEeWVa_wjtxZZxg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -220,7 +220,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WOGlYPnoEeWVa_wjtxZZxg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="__0QeAPp1EeWHMIJNhK5AuA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_VxaCXfnoEeWVa_wjtxZZxg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_CcGHgPq5EeWG0LJ00FjwNA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_VxaCXfnoEeWVa_wjtxZZxg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_WOGlYfnoEeWVa_wjtxZZxg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -529,7 +529,7 @@
       <tags>platform:cocoa</tags>
     </bindings>
     <bindings xmi:id="__YS6wPp1EeWHMIJNhK5AuA" keySequence="ALT+COMMAND+SHIFT+ARROW_DOWN" command="_VxjMV_noEeWVa_wjtxZZxg"/>
-    <bindings xmi:id="__Yw00Pp1EeWHMIJNhK5AuA" keySequence="COMMAND+CTRL+F" command="_Vy53I_noEeWVa_wjtxZZxg"/>
+    <bindings xmi:id="_CBAG8fq5EeWG0LJ00FjwNA" keySequence="COMMAND+CTRL+F" command="_Vy53I_noEeWVa_wjtxZZxg"/>
   </bindingTables>
   <bindingTables xmi:id="_VyQW4fnoEeWVa_wjtxZZxg" elementId="org.eclipse.ui.textEditorScope" bindingContext="_VxrIEvnoEeWVa_wjtxZZxg">
     <bindings xmi:id="_VySMEfnoEeWVa_wjtxZZxg" keySequence="ALT+ARROW_DOWN" command="_VxgJAfnoEeWVa_wjtxZZxg"/>
@@ -808,7 +808,7 @@
     <bindings xmi:id="__YSTsvp1EeWHMIJNhK5AuA" keySequence="CTRL+D" command="_VxeTw_noEeWVa_wjtxZZxg"/>
   </bindingTables>
   <bindingTables xmi:id="_Vy7FQPnoEeWVa_wjtxZZxg" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_Vwp0ZPnoEeWVa_wjtxZZxg">
-    <bindings xmi:id="__Yxb4Pp1EeWHMIJNhK5AuA" keySequence="M1+W" command="_Vy6eM_noEeWVa_wjtxZZxg"/>
+    <bindings xmi:id="_CBAuAPq5EeWG0LJ00FjwNA" keySequence="M1+W" command="_Vy6eM_noEeWVa_wjtxZZxg"/>
   </bindingTables>
   <bindingTables xmi:id="_WUL_QfnoEeWVa_wjtxZZxg" bindingContext="_WUL_QPnoEeWVa_wjtxZZxg"/>
   <bindingTables xmi:id="_WUMmUfnoEeWVa_wjtxZZxg" bindingContext="_WUMmUPnoEeWVa_wjtxZZxg"/>
