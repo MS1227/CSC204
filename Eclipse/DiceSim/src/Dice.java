@@ -1,5 +1,5 @@
 
-public class Dice 
+public class Dice
 {
 private int sides;
 private int last;

@@ -13,6 +13,7 @@ public DiceSim()
 	numOfDice = 1;
 	numOfRolls = 100;
 	countOfRolls = new int[sidesOfDice*numOfDice +1];
+	theDice = new Dice [numOfDice];
 		for(int i = 0; i<countOfRolls.length; i++)
 		{
 			countOfRolls[i] = 0;
@@ -29,6 +30,7 @@ public DiceSim(int arg1)
 	numOfDice = 1;
 	numOfRolls = arg1;
 	countOfRolls = new int[sidesOfDice*numOfDice +1];
+	theDice = new Dice [numOfDice];
 		for(int i = 0; i<countOfRolls.length; i++)
 		{
 			countOfRolls[i] = 0;
@@ -47,6 +49,7 @@ public DiceSim(int arg1, int arg2)
 	numOfDice = arg1;
 	numOfRolls = arg2;
 	countOfRolls = new int[sidesOfDice*numOfDice +1];
+	theDice = new Dice [numOfDice];
 		for(int i = 0; i<countOfRolls.length; i++)
 		{
 			countOfRolls[i] = 0;
@@ -76,8 +79,25 @@ public DiceSim(int arg1, int arg2, int arg3)
 }
 public void runSimulation()
 {
-
-	System.out.println("helloworld");
+	int rollSum = 0;
+	System.out.println("hello world");
+	for(int r = 0; r < numOfRolls; r++)
+	{
+		
+		rollSum = 0;
+		for(int i = 0 ; i < numOfDice; i++)
+		{
+			System.out.println("theDice " + (i+1)+":"+ theDice[i].roll());
+			rollSum += theDice[i].getLastRoll();
+			System.out.println("rollSum:" + rollSum);	
+		}
+		countOfRolls[rollSum] ++;
+	}
+		for(int p = 0; p < countOfRolls.length; p++)
+		{
+			if(p > 0)
+			System.out.println((p)+":" + countOfRolls[p]);
+		}
 }
 }
 
