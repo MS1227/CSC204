@@ -100,7 +100,7 @@ public void displayCout()
 	for(int p = 0; p < countOfRolls.length; p++)
 	{
 		if(p > 0)
-		System.out.println((numOfDice)+":" + countOfRolls[p]);
+		System.out.println((numOfDice++)+":" + countOfRolls[p]);
 	}
 }
 }
