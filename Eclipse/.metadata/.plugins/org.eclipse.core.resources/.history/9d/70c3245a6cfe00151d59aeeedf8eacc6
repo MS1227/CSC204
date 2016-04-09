@@ -1,0 +1,139 @@
+
+public class DiceSim 
+{
+private int sidesOfDice;
+private int numOfDice;
+private int numOfRolls;
+private int [] countOfRolls;
+private Dice[] theDice;
+
+public DiceSim()
+{
+	sidesOfDice = 6;
+	numOfDice = 1;
+	numOfRolls = 100;
+	countOfRolls = new int[sidesOfDice*numOfDice +1];
+	theDice = new Dice [numOfDice];
+		for(int i = 0; i<countOfRolls.length; i++)
+		{
+			countOfRolls[i] = 0;
+		}
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
+
+}
+
+public DiceSim(int arg1)
+{
+	sidesOfDice = 6;
+	numOfDice = 1;
+	numOfRolls = arg1;
+	countOfRolls = new int[sidesOfDice*numOfDice +1];
+	theDice = new Dice [numOfDice];
+		for(int i = 0; i<countOfRolls.length; i++)
+		{
+			countOfRolls[i] = 0;
+		}
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
+		
+
+}
+
+public DiceSim(int arg1, int arg2)
+{
+	sidesOfDice = 6;
+	numOfDice = arg1;
+	numOfRolls = arg2;
+	countOfRolls = new int[sidesOfDice*numOfDice +1];
+	theDice = new Dice [numOfDice];
+		for(int i = 0; i<countOfRolls.length; i++)
+		{
+			countOfRolls[i] = 0;
+		}
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
+		
+
+}
+
+public DiceSim(int arg1, int arg2, int arg3)
+{
+	sidesOfDice = arg1;
+	numOfDice = arg2;
+	numOfRolls = arg3;
+	countOfRolls = new int[sidesOfDice*numOfDice +1];
+	theDice = new Dice [numOfDice];
+		for(int i = 0; i<countOfRolls.length; i++)
+		{
+			countOfRolls[i] = 0;
+		}
+		for(int i = 0; i < numOfDice; i++)
+		{
+			theDice[i] = new Dice(sidesOfDice);
+		}
+
+}
+
+public void runSimulation()
+{
+	int rollSum = 0;
+	System.out.println("hello world");
+	for(int r = 0; r < numOfRolls; r++)
+	{
+		
+		rollSum = 0;
+		for(int i = 0 ; i < numOfDice; i++)
+		{
+			System.out.println("theDice " + (i+1)+":"+ theDice[i].roll());
+			rollSum += theDice[i].getLastRoll();
+			System.out.println("rollSum:" + rollSum);	
+		}
+		countOfRolls[rollSum] ++;
+	}
+
+}
+
+public void displayCount()
+{
+	for(int p = numOfDice; p < countOfRolls.length; p++)
+	{
+		
+		System.out.printf("%4s", p +": ");
+		System.out.print(countOfRolls[p]);
+		System.out.println();
+	}
+}
+
+public void graphCount()
+{
+	int graphScale = 1;
+	for(int s = 0; s < numOfRolls; s++)
+	{
+		if(s%100 == 0 && s>0)
+			graphScale ++;
+	}
+	for(int p = numOfDice; p < countOfRolls.length; p++)
+	{
+		System.out.printf("%4s", p +": " );
+		for(int g = 0; g < (double)(countOfRolls[p]/graphScale); g++)
+			{
+			System.out.print("*");
+			}
+		System.out.println();
+	}
+	if(graphScale > 1)
+	System.out.println("SCALE 1 * = " + graphScale);
+}
+}
+
+	
+
+
+
