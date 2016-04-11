@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.JFrame;
-
 //Dice sim Main by Matt Schnider
 
 public class P9DiceSim {
@@ -44,7 +42,6 @@ static int userDiceSidesCount;
 		simulation.runSimulation();
 		simulation.displayCount();
 		simulation.graphCount();
-		
 
 	}
 

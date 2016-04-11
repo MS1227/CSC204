@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+//Dice sim Main by Matt Schnider
+public class P9DiceSim {
+static int userDiceCount;
+static int userRollCount;
+static int userDiceSidesCount;
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Welcome to Dice Simulator, a clever program used to simulate the rolling of Dice");
+		
+		do
+		{
+		System.out.println("Please enter the desired amount of Dice (no entry defaults to 1): ");
+		userDiceCount = in.nextInt();
+		}
+		while(userDiceCount >=0);
+		
+		do
+		{
+			System.out.println("Please enter the amount of sides on the Dice (no entry defaults to 6): ");
+			userRollCount = in.nextInt();
+		}
+		while(userRollCount >=0);
+		
+
+	}
+
+}

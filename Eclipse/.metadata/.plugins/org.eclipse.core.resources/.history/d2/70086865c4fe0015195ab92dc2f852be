@@ -105,22 +105,40 @@ public void displayCount()
 	for(int p = numOfDice; p < countOfRolls.length; p++)
 	{
 		
-		System.out.println(p+": "+ + countOfRolls[p]);
+		System.out.printf("%4s", p +": ");
+		System.out.print(countOfRolls[p]);
+		System.out.println();
 	}
+	System.out.println();
 }
 
 public void graphCount()
 {
-	for(int p = numOfDice; p < countOfRolls.length; p++)
+	int graphScale = 1;
+	
+	for(int s = 0; s < numOfRolls; s++)
 	{
-		System.out.print(p+": " );
-		for(int g = 0; g < countOfRolls[p]; g++)
-		{
-		System.out.printf("%-5c","*");
-		}
-		System.out.println();
+		if(s%100 == 0 && s>0)
+			graphScale ++;
 	}
 	
+	for(int p = numOfDice; p < countOfRolls.length; p++)
+	{
+		System.out.printf("%4s", p +": " );
+		for(int g = 0; g < (countOfRolls[p]/graphScale); g++)
+			{
+			System.out.print("*");
+			}
+		System.out.println();
+	}
+	System.out.println();
+	if(graphScale > 1)
+	{
+	System.out.println("SCALE 1 * = " + graphScale);
+	System.out.println("**Scaled values show trend, not exact number**");
+	System.out.println("**Current graph showing results for: "+numOfRolls+" rolls**");
+	
+	}
 }
 }
 

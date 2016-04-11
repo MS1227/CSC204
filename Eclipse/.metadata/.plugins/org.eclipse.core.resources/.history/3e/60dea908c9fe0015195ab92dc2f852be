@@ -84,16 +84,14 @@ public DiceSim(int arg1, int arg2, int arg3)
 public void runSimulation()
 {
 	int rollSum = 0;
-	System.out.println("hello world");
 	for(int r = 0; r < numOfRolls; r++)
 	{
 		
 		rollSum = 0;
 		for(int i = 0 ; i < numOfDice; i++)
 		{
-			System.out.println("theDice " + (i+1)+":"+ theDice[i].roll());
+			theDice[i].roll();
 			rollSum += theDice[i].getLastRoll();
-			System.out.println("rollSum:" + rollSum);	
 		}
 		countOfRolls[rollSum] ++;
 	}
@@ -105,21 +103,40 @@ public void displayCount()
 	for(int p = numOfDice; p < countOfRolls.length; p++)
 	{
 		
-		System.out.println(p+": "+ + countOfRolls[p]);
+		System.out.printf("%4s", p +": ");
+		System.out.print(countOfRolls[p]);
+		System.out.println();
 	}
+	System.out.println();
 }
 
 public void graphCount()
 {
+	int graphScale = 1;
+	
+	for(int s = 0; s < numOfRolls; s++)
+	{
+		if(s%200 == 0 && s>0)
+			graphScale ++;
+	}
+	
 	for(int p = numOfDice; p < countOfRolls.length; p++)
 	{
-		System.out.print(p+": " );
-		for(int g = 0; g < countOfRolls[p]; g++)
-		{
-		System.out.printf("%-1s","*");
-		}
+		System.out.printf("%4s", p +": " );
+		for(int g = 0; g < (countOfRolls[p]/graphScale); g++)
+			{
+			System.out.print("*");
+			}
 		System.out.println();
 	}
+	System.out.println();
+	if(graphScale > 1)
+	{
+	System.out.println("SCALE 1 * = " + graphScale);
+	System.out.println("**Scaled values show trend, not exact number**");
+	}
+	System.out.println("**Current graph showing results for: "+numOfRolls+" rolls**");
+	
 	
 }
 }
