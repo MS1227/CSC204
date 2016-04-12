@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 import javax.swing.JFrame;
 
-//Dice sim Main by Matt Schnider
-
+/*Dice sim Main by Matt Schnider
+ * Due April 13, 2016
+ */
 public class P9DiceSim {
 static int userDiceCount;
 static int userRollCount;
