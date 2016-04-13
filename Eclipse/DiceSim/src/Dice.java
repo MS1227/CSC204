@@ -1,4 +1,4 @@
-
+//Dice class file by Matt Schnider
 public class Dice
 {
 private int sides;
