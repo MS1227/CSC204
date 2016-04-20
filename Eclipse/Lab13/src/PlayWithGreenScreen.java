@@ -54,7 +54,7 @@ public class PlayWithGreenScreen {
 				// 'green' is green enough to swap it for the
 				// background pixel.
 				
-				if(!(g>g*.80 && r<45) ) // THIS IS WHERE YOU DECIDE IF IT IS NOT GREEN
+				if(!(g>90 && r<63 ) ) // THIS IS WHERE YOU DECIDE IF IT IS NOT GREEN
 					bgPic.setColorAt(w,h,fgPixel);
 					
 					
