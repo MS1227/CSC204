@@ -1,0 +1,10 @@
+
+public class PointsOnCircle {
+
+	public static void main(String[] args) {
+		System.out.println("Matt Schnider's Point on a Circle Program");
+		System.out.println("*****************************************");
+
+	}
+
+}
