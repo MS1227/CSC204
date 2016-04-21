@@ -17,7 +17,7 @@ public class CrazyArrayList
                 a.add(0, new Integer (64));
                 
                 System.out.println (a);
-
+                
 
                 a.set (4, a.get(2) + a.get( a.get(a.size() - 1) ));
                 System.out.println (a);
