@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PointsOnCircle {
@@ -11,7 +12,9 @@ public class PointsOnCircle {
 		double centerX;
 		double centerY;
 		double radius;
-		double numOfPoints;
+		int numOfPoints;
+		
+		ArrayList<Coords> points = new ArrayList<Coords>();
 		
 		System.out.println();
 		
@@ -23,7 +26,22 @@ public class PointsOnCircle {
 		System.out.println("Please give the radius of your circle: ");
 		radius = in.nextDouble();
 		System.out.println("How many points would you like on your circle? ");
-		numOfPoints = in.nextDouble();
+		numOfPoints = in.nextInt();
+		
+		double increment = (2*Math.PI)/numOfPoints;
+		double x,y;
+		
+		for(int i=1; i<=numOfPoints; i++)
+		{
+			x = radius*Math.cos(i*increment) + centerX;
+			y = radius*Math.sin(i*increment) + centerY;
+			points.add(new Coords(x, y));
+			
+		}
+		
+		System.out.println(points);
+		
+		
 		
 
 	}
