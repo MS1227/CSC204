@@ -31,7 +31,7 @@ public class PointsOnCircle {
 		double increment = (2*Math.PI)/numOfPoints;
 		double x,y;
 		
-		for(int i=1; i<=numOfPoints; i++)
+		for(int i=numOfPoints; i>0; i--)
 		{
 			x = radius*Math.cos(i*increment) + centerX;
 			y = radius*Math.sin(i*increment) + centerY;
@@ -39,7 +39,11 @@ public class PointsOnCircle {
 			
 		}
 		
-		System.out.println(points);
+		for(int i = numOfPoints-1 ; i>=0; i--)
+		{
+			System.out.println(points.get(i));
+			
+		}
 		
 		
 		
