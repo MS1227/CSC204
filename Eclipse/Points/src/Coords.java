@@ -25,10 +25,9 @@ public double getY() //method that is passed nothing and returns value of y.
 {
 	return y;
 }
-public String toString()
+public String toString() //To string method that is passed nothing and returns coordinates in formatted string.
 {
-	String xF = String.format("%.2f", x);
-	String yF = String.format("%.2f", y);
-	return "("+xF+"," + yF+")";
+	
+	return String.format("(%5.2f, %5.2f)", x,y);
 }
 }

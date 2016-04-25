@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.JFrame;
+
 public class PointsOnCircle {
 
 	public static void main(String[] args) {
@@ -31,7 +33,7 @@ public class PointsOnCircle {
 		double increment = (2*Math.PI)/numOfPoints;
 		double x,y;
 		
-		for(int i=numOfPoints; i>0; i--)
+		for(int i=0; i<numOfPoints; i++)
 		{
 			x = radius*Math.cos(i*increment) + centerX;
 			y = radius*Math.sin(i*increment) + centerY;
@@ -39,12 +41,20 @@ public class PointsOnCircle {
 			
 		}
 		
-		for(int i = numOfPoints-1 ; i>=0; i--)
-		{
+		for(int i=0; i<points.size(); i++)
 			System.out.println(points.get(i));
-			
-		}
 		
+		JFrame frame = new JFrame();
+
+	      frame.setSize(800, 600);
+	      frame.setTitle("Spokes in a wheel");
+	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	      Spokes component = new Spokes(lines);
+	      frame.add(component);
+
+	      frame.setVisible(true);
+	
 		
 		
 
