@@ -44,20 +44,6 @@ public class PointsOnCircle {
 		for(int i=0; i<points.size(); i++)
 			System.out.println(points.get(i));
 		
-		JFrame frame = new JFrame();
-
-	      frame.setSize(800, 600);
-	      frame.setTitle("Spokes in a wheel");
-	      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-	      Spokes component = new Spokes(lines);
-	      frame.add(component);
-
-	      frame.setVisible(true);
 	
-		
-		
-
 	}
-
 }
