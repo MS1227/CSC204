@@ -21,7 +21,7 @@ public class Coords
  */
 private double x;
 /**
- * Value of the y variable. change here. yet another change.
+ * Value of the y variable. change here.
  */
 private double y;
 /**
