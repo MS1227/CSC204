@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+//this is a test
+=======
 /**
  * Class file that generates Cartesian coordinates for use in storing x and y values of points
  * found on a user-defined circle.
@@ -9,6 +12,7 @@
  * @author MattSchnider
  *
  */
+>>>>>>> fd13194e7d4a5ef347232a9b2cc6d0c549a11d39
 public class Coords
 {
 	
@@ -17,7 +21,7 @@ public class Coords
  */
 private double x;
 /**
- * Value of the y variable.
+ * Value of the y variable. change here. yet another change.asdfasdf
  */
 private double y;
 /**
