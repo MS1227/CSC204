@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-//this is a test
-=======
 /**
  * Class file that generates Cartesian coordinates for use in storing x and y values of points
  * found on a user-defined circle.
@@ -10,9 +7,11 @@
  * 
  * 
  * @author MattSchnider
+ * @version 1.0
+ * @since Spring 2016
  *
  */
->>>>>>> fd13194e7d4a5ef347232a9b2cc6d0c549a11d39
+
 public class Coords
 {
 	
@@ -21,13 +20,13 @@ public class Coords
  */
 private double x;
 /**
- * Value of the y variable. change here. yet another change.asdfasdf
+ * Value of the y variable. 
  */
 private double y;
 /**
  * Default constructor that initializes and sets x and y both equal to 0.
  */
-public Coords() //Constructor that is passed nothing and sets x and y to 0
+public Coords() 
 {
 	x = 0.0;
 	y = 0.0;
@@ -37,7 +36,7 @@ public Coords() //Constructor that is passed nothing and sets x and y to 0
  * @param a Sets the value of x in the Cartesian coordinate.
  * @param b Sets the value of y in the Cartesian coordinate.
  */
-public Coords(double a, double b) //Constructor that is passed two doubles that are assigned to x and y.
+public Coords(double a, double b) 
 {
 	x = a;
 	y = b;
@@ -47,7 +46,7 @@ public Coords(double a, double b) //Constructor that is passed two doubles that 
  * Returns the current value stored in x.
  * @return the current value of x.
  */
-public double getX() //method that is passed nothing and returns value of x.
+public double getX() 
 {
 	return x;
 }
@@ -56,15 +55,15 @@ public double getX() //method that is passed nothing and returns value of x.
  *
  * @return the current value of y.
  */
-public double getY() //method that is passed nothing and returns value of y.
+public double getY() 
 {
 	return y;
 }
 /**
- * toString method for printing out x and y in Cartesian notation.
+ * toString method for printing out x and y in Cartesian notation, (x,y).
  * @return Formatted string to 2 decimal places.
  */
-public String toString() //To string method that is passed nothing and returns coordinates in formatted string.
+public String toString() 
 {
 	
 	return String.format("(%5.2f, %5.2f)", x,y);
