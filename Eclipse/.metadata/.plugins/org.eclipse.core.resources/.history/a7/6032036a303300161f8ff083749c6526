@@ -1,0 +1,27 @@
+
+public class MagicSquare 
+{
+	
+private int rows;
+private int columns;
+private int [][] square;
+
+MagicSquare()
+{
+	rows = 3;
+	columns = 3;
+	square = new int [rows][columns];
+	
+}
+MagicSquare(int a, int b)
+{
+	rows = a;
+	columns = b;
+	square = new int [rows][columns];
+}
+
+public int Size()
+{
+	return square.length;
+}
+}

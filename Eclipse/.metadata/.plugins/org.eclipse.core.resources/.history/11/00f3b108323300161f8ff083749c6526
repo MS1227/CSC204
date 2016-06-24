@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class MagicSquareTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in) ;
+		
+		MagicSquare test1 = new MagicSquare();
+		int userVal;
+		
+		for(int r=0; r<test1.size(); r++)
+		{
+		
+		for(int c=0; c<test1.size(); c++)
+		{
+			userVal = 0;
+			System.out.println("Please input row"+" "+(r+1)+","+"column"+" "+(c+1));
+			userVal = in.nextInt();
+			test1.add(r, c, userVal);
+		}
+		}
+		
+		System.out.println(test1.getVal(2, 2));
+
+	}
+
+}

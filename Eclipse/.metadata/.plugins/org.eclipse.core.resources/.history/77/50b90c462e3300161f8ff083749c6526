@@ -1,0 +1,13 @@
+
+public class MagicSquareTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MagicSquare test1 = new MagicSquare();
+		
+		System.out.println(test1.Size());
+		
+
+	}
+
+}

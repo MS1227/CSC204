@@ -1,0 +1,47 @@
+
+public class Matrix 
+{
+	
+private int rows;
+private int columns;
+private int [][] square;
+
+Matrix()
+{
+	rows = 3;
+	columns = 3;
+	square = new int [rows][columns];
+	
+}
+Matrix(int a, int b)
+{
+	rows = a;
+	columns = b;
+	square = new int [rows][columns];
+}
+
+public int size()
+{
+	return square.length;
+}
+public void add(int c, int d, int val)
+{
+	square[c][d] = val;
+}
+public int getVal(int c, int d)
+{
+	return square[c][d];
+}
+
+public void isMagicSquare()
+{
+	int top, bottom, left, right, diagonal1, diagonal2;
+	for(int r = 0, c =0; c<square.length; c++)
+	{
+		top = 0;
+		square[r][c] += top;
+		System.out.println(top);
+	}
+}
+
+}

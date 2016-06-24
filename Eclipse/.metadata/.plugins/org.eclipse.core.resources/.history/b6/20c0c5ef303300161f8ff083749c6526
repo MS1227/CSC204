@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class MagicSquareTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in) ;
+		
+		MagicSquare test1 = new MagicSquare();
+		
+		for(int r=0; r<test1.size(); r++)
+		{
+		System.out.println("Please input row"+" "+(r+1));
+		for(int c=0; c<test1.size(); c++)
+		{
+			
+		}
+		}
+		
+		
+
+	}
+
+}
