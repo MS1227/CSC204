@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class SummerMain {
+
+	public static void main(String[] args)
+	{
+	 Scanner in = new Scanner(System.in);
+	 
+	 System.out.print("Please type a word: ");
+	 String word = new String(in.next());
+	 System.out.print(word);
+		
+	}
+
+}

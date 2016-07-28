@@ -1,0 +1,47 @@
+
+public class Stringy {
+	
+private int vCount;	
+private String word;
+private char a,e,i,o,u;
+private char [] cArray;
+private char[] revCArray;
+
+Stringy(String a)
+{
+	word = a;
+}
+//A method to reverse a string
+public void revString() {
+	
+
+	revCArray = new char[word.length()]; //Array of Chars initialized to the length of the users word.
+	cArray = word.toCharArray(); //Word that is passed in is put into an array called cArray.
+    
+	for(int r = cArray.length-1, rev = 0; r>0 || rev<cArray.length; r-- ,rev++)//For loop takes the last letter in cArray 
+		                                                                       //and puts it in the first letter of revCArray.
+	{
+		revCArray[rev] = cArray[r];
+	}
+	
+	System.out.print("Your reversed word is: " ); //Reversed array is printed out.
+	System.out.println(revCArray);
+}
+public void countVowels() {
+    a = 'a';
+    e = 'e';
+    o = 'o';
+    u = 'u';
+    i = 'i';
+	for(int index = 0; i < word.length(); i++ )
+	{
+		if(word.charAt(index) == a || word.charAt(index) == e || word.charAt(index) == i || word.charAt(index) == o || word.charAt(index) == u)
+			vCount++;
+		
+	}
+	System.out.println(vCount);
+	
+}
+
+ 	
+}

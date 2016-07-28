@@ -1,15 +1,21 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
+
 
 public class MagicSquareMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in) ;
+		//Scanner in = new Scanner(System.in) ;
 		
 		Matrix test1 = new Matrix();
-		int userVal;
 		
-		for(int r=0; r<test1.size(); r++)
+		//int userVal;
+		String bubba = "magic.in.txt";
+		Scanner inFile = new Scanner(new File(bubba));
+		System.out.print(inFile.nextInt());
+/*		for(int r=0; r<test1.size(); r++)
 		{
 		
 			for(int c=0; c<test1.size(); c++)
@@ -19,7 +25,7 @@ public class MagicSquareMain {
 				userVal = in.nextInt();
 				test1.add(r, c, userVal);
 				}
-		}
+		}*/
 		System.out.println();
 		System.out.println("The matrix has the values:");
 		for(int r=0; r<test1.size(); r++)
@@ -33,6 +39,6 @@ public class MagicSquareMain {
 					}
 		}
 	}
-		test1.isMagicSquare();
+		test1.isMagicSquare(); 
 	}
 }

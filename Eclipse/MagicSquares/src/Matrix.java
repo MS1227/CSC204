@@ -1,3 +1,7 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.*;
 
 public class Matrix 
 {
@@ -7,11 +11,11 @@ private int columns;
 private int top, bottom, left, right, diagonal1, diagonal2;
 private int [][] square;
 
-Matrix()
+Matrix() throws IOException
 {
-	rows = 3;
-	columns = 3;
-	square = new int [rows][columns];
+	initialize(square);
+	
+
 	
 }
 Matrix(int a, int b)
@@ -34,6 +38,17 @@ public int getVal(int c, int d)
 	return square[c][d];
 }
 
+private static void initialize (int[][] square) throws IOException
+{
+		String filename = "magic.in.txt";
+        Scanner inFile = new Scanner(new File(filename));
+        int[][] square1 = new int[3][3];
+
+        for (int row = 0;  row < square1.length;  row++)
+                 for (int col = 0;  col < square[0].length;  col++)
+                           square1[row][col] = inFile.nextInt();
+        System.out.println(square);
+}
 public void isMagicSquare()
 {
 	top = 0;

@@ -1,0 +1,10 @@
+
+public class Stringy {
+	
+String word;	
+Stringy(String a)
+{
+	word = a;
+}
+	
+}
