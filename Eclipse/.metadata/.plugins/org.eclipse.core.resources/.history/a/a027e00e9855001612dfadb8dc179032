@@ -3,7 +3,7 @@ public class Stringy {
 	
 private int vCount;	
 private String word;
-private char a,e,i,o,u,y;
+private char a,e,i,o,u;
 private char [] cArray;
 private char[] revCArray;
 
@@ -33,10 +33,9 @@ public void countVowels() {
     o = 'o';
     u = 'u';
     i = 'i';
-    y = 'y';
 	for(int index = 0; index < word.length(); index++ )
 	{
-		if(word.charAt(index) == a || word.charAt(index) == e || word.charAt(index) == i || word.charAt(index) == o || word.charAt(index) == u || word.charAt(index) == y)
+		if(word.charAt(index) == a || word.charAt(index) == e || word.charAt(index) == i || word.charAt(index) == o || word.charAt(index) == u)
 			vCount++;
 		
 	}
