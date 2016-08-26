@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="2" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
-	<section name="OptionalMessageDialog.hide.">
-		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
-	</section>
-	<section name="completion_proposal_size">
-	</section>
-	<section name="JavaElementSearchActions">
+	<section name="javadoc">
+		<item value="private" key="access"/>
+		<item value="false" key="noindex"/>
+		<item value="/Users/MattSchnider/CSC204/Eclipse/Points/javadoc.xml" key="antpath"/>
+		<item value="false" key="nodeprecatedlist"/>
+		<item value="true" key="use"/>
+		<item value="false" key="nodeprecated"/>
+		<item value="true" key="author"/>
+		<item value="false" key="nonavbar"/>
+		<item value="" key="docletpath"/>
+		<item value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
+		<item value="1.7" key="source"/>
+		<item value="true" key="version"/>
+		<item value="" key="docletname"/>
+		<item value="true" key="splitindex"/>
+		<item value="true" key="fromStandard"/>
+		<item value="false" key="notree"/>
+		<item value="/Users/MattSchnider/CSC204/Eclipse/Points/doc" key="destdir"/>
+		<item value="false" key="openinbrowser"/>
+		<section name="projects">
+			<section name="temp">
+				<item value="/Users/MattSchnider/CSC204/Eclipse/temp/javadoc.xml" key="antpath"/>
+				<item value="/Users/MattSchnider/CSC204/Eclipse/temp/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+			<section name="Points">
+				<item value="/Users/MattSchnider/CSC204/Eclipse/Points/javadoc.xml" key="antpath"/>
+				<item value="/Users/MattSchnider/CSC204/Eclipse/Points/doc" key="destdir"/>
+				<item value="" key="href"/>
+			</section>
+		</section>
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
 	</section>
-	<section name="quick_assist_proposal_size">
+	<section name="OptionalMessageDialog.hide.">
+		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
-	<section name="javadoc">
-		<item value="false" key="nodeprecatedlist"/>
-		<item value="false" key="notree"/>
-		<item value="true" key="splitindex"/>
-		<item value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/javadoc" key="javadoc_command_history"/>
-		<item value="true" key="use"/>
-		<item value="false" key="nonavbar"/>
-		<item value="private" key="access"/>
-		<item value="true" key="version"/>
-		<item value="false" key="nodeprecated"/>
-		<item value="/Users/MattSchnider/CSC204/Eclipse/Points/doc" key="destdir"/>
-		<item value="true" key="author"/>
-		<item value="" key="docletname"/>
-		<item value="1.7" key="source"/>
-		<item value="false" key="openinbrowser"/>
-		<item value="false" key="noindex"/>
-		<item value="" key="docletpath"/>
-		<item value="/Users/MattSchnider/CSC204/Eclipse/Points/javadoc.xml" key="antpath"/>
-		<item value="true" key="fromStandard"/>
-		<section name="projects">
-			<section name="temp">
-				<item value="/Users/MattSchnider/CSC204/Eclipse/temp/doc" key="destdir"/>
-				<item value="" key="href"/>
-				<item value="/Users/MattSchnider/CSC204/Eclipse/temp/javadoc.xml" key="antpath"/>
-			</section>
-			<section name="Points">
-				<item value="/Users/MattSchnider/CSC204/Eclipse/Points/doc" key="destdir"/>
-				<item value="" key="href"/>
-				<item value="/Users/MattSchnider/CSC204/Eclipse/Points/javadoc.xml" key="antpath"/>
-			</section>
-		</section>
+	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="JavadocWizardDialog">
 		<item value="600" key="DIALOG_WIDTH"/>
+		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="534" key="DIALOG_HEIGHT"/>
 		<item value="28" key="DIALOG_Y_ORIGIN"/>
 		<item value="212" key="DIALOG_X_ORIGIN"/>
-		<item value="534" key="DIALOG_HEIGHT"/>
-		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="JavaElementSearchActions">
 	</section>
 </section>

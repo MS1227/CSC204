@@ -17,6 +17,7 @@ java_multi_line_comment=174,40,34
 java_single_line_comment=198,205,0
 matchingBracketsColor=238,238,238
 org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=12
 org.eclipse.jdt.ui.javadoclocations.migrated=true
@@ -24,7 +25,11 @@ org.eclipse.jdt.ui.text.code_templates_migrated=true
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.templates_migrated=true
+<<<<<<< HEAD
 org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|;
+=======
+org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+>>>>>>> f4f2b31f3f515dd8d3d3654659d3c0ed93b600fd
 proposalOrderMigrated=true
 sourceHoverBackgroundColor=0,0,0
 sp_cleanup.add_default_serial_version_id=true
