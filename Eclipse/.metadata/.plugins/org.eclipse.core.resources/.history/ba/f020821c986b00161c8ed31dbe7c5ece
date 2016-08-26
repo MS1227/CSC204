@@ -1,0 +1,9 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		int [] N = {5,3,-6,1,0};
+		System.out.println(N);
+	}
+
+}
